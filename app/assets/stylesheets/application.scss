@@ -1,0 +1,20 @@
+@import 'default_css';
+body {
+  background-color: #EAEAEA;
+  margin: 0px;
+}
+#container{
+  position: relative;
+}
+#sub_container{
+  margin: 0 auto;
+  background: black;
+  width: 95vw;
+}
+#sub_container div{
+  background: pink;
+  height:100px;
+}
+#footer{
+  margin-top:100px;
+}

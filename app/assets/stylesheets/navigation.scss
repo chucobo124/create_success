@@ -1,17 +1,16 @@
 // Top Navigation style
 #top_navigation{
+  z-index: 9999;
   margin-top: 3vh;
   position: fixed;
 }
 #top_navigation #nav_icon_block{
   display: flex;
   justify-content: flex-end;
-  background-color: rgba(255, 255, 255, 0);;
   width: 5vw;
 }
 #top_navigation #nav_icon_block #nav_icon{
   position: relative;
-  height: 100%;
   width: 50px;
   display: flex;
   align-items: center;

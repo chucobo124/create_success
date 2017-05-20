@@ -46,7 +46,7 @@
   margin-left: 10px;
 }
 #top_navigation #main_block ul{
-  flex: 2 0 0px;
+  flex: 2 0 900px;
 }
 // End Top Navigation style
 
@@ -58,27 +58,37 @@
   overflow: hidden;
 }
 .horizontal_navigation ul{
-  float:right;
-  display: inline-block;
-  flex-direction: row;
+  display: flex;
+  justify-content: flex-end;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: white;
 }
-
+.horizontal_navigation li:first-child span{
+  border-left: none;
+}
+.horizontal_navigation li span{
+  padding:0px 25px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  height: 26px;
+  border-left: solid 1px #DCDDDD;
+}
 .horizontal_navigation li{
+  height:45px;
   display: inline-block;
-  width: 100px;
 }
 
 /* Style the links inside the navigation bar */
 .horizontal_navigation a {
-  display: block;
+  height:45px;
+  display: flex;
+  align-items: center;
   color: black;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }

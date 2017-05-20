@@ -4,8 +4,10 @@
 
 #home_adv{
   background-image: image-url('home_adv');
-  background-size: 100%;
-  background-color: burlywood; // Temp block visible
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   width: 100vw;
   height: 100vh;
 }

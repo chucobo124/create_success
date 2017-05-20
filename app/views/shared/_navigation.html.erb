@@ -1,9 +1,27 @@
 <%= stylesheet_link_tag 'navigation', media: 'all' %>
 <div id='top_navigation' class='horizontal_navigation'>
-  <ul>
-    <li><a href="default.asp"></a></li>
-    <li><a href="news.asp">News</a></li>
-    <li><a href="contact.asp">Contact</a></li>
-    <li><a href="about.asp">About</a></li>
-  </ul>
+  <div id='nav_icon_block'>
+    <div id= 'nav_icon'>
+      <%=image_tag('nav_icon')%>
+    </div><!--End Nav Icon-->
+  </div><!--End Nav Icon Block-->
+  <div id='main_block'>
+    <div id='main_icon'>
+      <%=image_tag('main_icon')%>
+    </div>
+    <ul>
+      <li><a href="#"><span><%= t('navigation.home') %></span></a></li>
+      <li><a href="#"><span><%= t('navigation.aboutUs') %></span></a></li>
+      <li><a href="#"><span><%= t('navigation.products') %></span></a></li>
+      <li><a href="#"><span><%= t('navigation.faq') %></span></a></li>
+      <li><a href="#"><span><%= t('navigation.catalogs') %></span></a></li>
+      <li><a href="#"><span><%= t('navigation.news') %></span></a></li>
+      <li><a href="#"><span><%= t('navigation.contactUs') %></span></a></li>
+    </ul>
+  </div><!--END Main Icon Block-->
+  <div id='language_block'>
+    <div id='language'>
+      <span><%= t('navigation.language') %></span>
+    </div>
+  </div>
 </div>

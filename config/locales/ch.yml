@@ -1,0 +1,10 @@
+ch:
+  navigation:
+    home: '造勝機械'
+    aboutUs: '關於我們'
+    products: '產品介紹'
+    faq: '相關知識'
+    catalogs: '線上型錄'
+    news: '最新消息'
+    contactUs: '聯絡方式'
+    language: '語言'

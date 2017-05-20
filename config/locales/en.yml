@@ -20,4 +20,12 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  navigation:
+    home: 'Create Success'
+    aboutUs: 'About Us'
+    products: 'Products'
+    faq: 'FAQ'
+    catalogs: 'Catalogs'
+    news: 'NEWS'
+    contactUs: 'Contact Us'
+    language: 'Language'

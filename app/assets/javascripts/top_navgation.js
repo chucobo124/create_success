@@ -5,9 +5,10 @@ function adjustTopMenu(){
   var scrollTop= window.scrollY;
   var compareElementBottom= document.getElementById('home_adv').offsetHeight;
   if (scrollTop > compareElementBottom){
-    targetElement.style.marginTop= '0';
+    if(targetElement.classList.contains('troggle_true')){ return }
+    targetElement.className += ' troggle_true';
   }
   else{
-    targetElement.style.marginTop= '3vh';
+    targetElement.classList.remove('troggle_true');
   }
 }

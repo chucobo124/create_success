@@ -49,6 +49,21 @@
 }
 // End Top Navigation style
 
+// When troggle the target block
+.troggle_true {
+  margin-top: 0vh !important;
+}
+.troggle_true #nav_icon_block{
+  width: 3.5vw !important;
+}
+.troggle_true #language_block{
+  background-color: white !important;
+}
+.troggle_true #main_block{
+  width: 100vw !important;
+}
+// End changes
+
 /* Add a black background color to the top navigation */
 .horizontal_navigation {
   display: flex;

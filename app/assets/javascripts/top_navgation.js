@@ -2,7 +2,7 @@
 function adjustTopMenu(){
   var targetElement= document.getElementById('top_navigation');
   if(targetElement === null || targetElement === undefined){ return }
-  var scrollTop= window.scrollY;
+  var scrollTop= window.scrollY + 70;
   var compareElementBottom= document.getElementById('home_adv').offsetHeight;
   if (scrollTop > compareElementBottom){
     if(targetElement.classList.contains('troggle_true')){ return }

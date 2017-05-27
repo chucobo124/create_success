@@ -3,6 +3,6 @@ window.onload = function() {
     var event = element.addEventListener("animationend", fadeAdvProduct, false);
     function fadeAdvProduct(){
       var targetElement = document.getElementById('home_adv_product');
-      targetElement.className += 'fade_out';
+      targetElement.className += 'fade_in';
     }
   }

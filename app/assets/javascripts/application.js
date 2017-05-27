@@ -14,3 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//
+// AOS.init({
+//  duration: 1200
+// });

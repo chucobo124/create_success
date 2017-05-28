@@ -1,0 +1,30 @@
+#about_us .article_container{
+  display: flex;
+}
+#about_us .article_container .article_picture{
+  background-color: #f1652f;
+  width: 50vw;
+}
+#about_us .article_container .article_picture img{
+  width: 43vw;
+  margin-bottom: 30px;
+}
+#about_us .article_container .aritcle{
+  background: white;
+  width: 50vw;
+}
+#about_us .article_container .aritcle .paragraph_container{
+  display: block;
+  padding: 3em;
+  background: white;
+}
+#about_us .article_container .aritcle .paragraph_container h3{
+  font-size: 5ch;
+}
+#about_us .article_container .aritcle .paragraph_container p{
+  line-height: 4ch;
+  padding: 3ch 0px;
+}
+#about_us .picture_container img{
+  width: 100%;
+}

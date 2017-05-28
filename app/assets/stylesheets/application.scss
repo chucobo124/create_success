@@ -1,4 +1,5 @@
 @import 'default_css';
+@import 'aos/dist/aos';
 body {
   background-color: #EAEAEA;
   margin: 0px;
@@ -13,7 +14,6 @@ body {
 }
 #sub_container div{
   background: pink;
-  height:100px;
 }
 #footer{
   margin-top:100px;

@@ -8,3 +8,5 @@ ch:
     news: '最新消息'
     contactUs: '聯絡方式'
     language: '語言'
+  product_deatil:
+    read_more: '觀看更多產品細節 >'

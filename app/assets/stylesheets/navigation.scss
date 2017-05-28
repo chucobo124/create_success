@@ -1,10 +1,18 @@
+.shadow_container{
+  display:flex;
+  -webkit-box-shadow: 6px 11px 7px -8px rgba(0, 0, 0, 0.75);;
+  -moz-box-shadow: 6px 11px 7px -8px rgba(0, 0, 0, 0.75);;
+  box-shadow: 6px 11px 7px -8px rgba(0, 0, 0, 0.75);;
+}
 // Top Navigation style
 #top_navigation{
   z-index: 9999;
   margin-top: 3vh;
   position: fixed;
+  overflow: visible;
 }
 #top_navigation #nav_icon_block{
+  z-index:9;
   display: flex;
   justify-content: flex-end;
   width: 5vw;
@@ -33,6 +41,7 @@
   border-right: solid 10px #F26421;
 }
 #top_navigation #main_block{
+  z-index:9;
   display: flex;
   align-items: center;
   width: 85vw;
@@ -52,15 +61,23 @@
 // When troggle the target block
 .troggle_true {
   margin-top: 0vh !important;
+  -webkit-box-shadow: 0px 3px 8px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 8px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 3px 8px 1px rgba(0, 0, 0, 0.75);
 }
 .troggle_true #nav_icon_block{
   width: 3.5vw !important;
 }
 .troggle_true #language_block{
+  z-index:10;
   background-color: white !important;
 }
-.troggle_true #main_block{
+.troggle_true .shadow_container{
+  background-color: white;
   width: 100vw !important;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 // End changes
 
@@ -98,7 +115,7 @@
 
 /* Style the links inside the navigation bar */
 .horizontal_navigation a {
-  height:45px;
+  height:41px;
   display: flex;
   align-items: center;
   color: black;
@@ -109,10 +126,9 @@
 
 /* Change the color of links on hover */
 .horizontal_navigation a:hover {
-  background-color: #ddd;
   color: black;
+  border-bottom: 4px solid #f36421;
 }
-
 /* Add a color to the active/current link */
 .horizontal_navigation a.active {
   background-color: #4CAF50;

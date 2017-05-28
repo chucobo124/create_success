@@ -32,14 +32,14 @@
   width: 40vw;
   left: 100vw;
   animation-name: fade_image_from_right;
-  animation-duration: 2s;
+  animation-duration: 1s;
   -webkit-animation-name: fade_image_from_right; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
   -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
   animation-fill-mode: forwards;
 }
 #home_adv #home_adv_product{
-  left: 0;
+  left: 100vw;
   position: relative;
 }
 #home_adv #home_adv_product img{
@@ -52,6 +52,18 @@
   -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
   -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
   animation-fill-mode: forwards;
+}
+.fade_in{
+  animation-name: fade_image_in;
+  animation-duration: 1s;
+  -webkit-animation-name: fade_image_in; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+  animation-fill-mode: forwards;
+}
+@keyframes fade_image_in{
+  form { left: 100vw }
+  to { left: 0vw }
 }
 @keyframes fade_image_out{
   form { left: 0 }

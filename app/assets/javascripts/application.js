@@ -12,5 +12,18 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require aos/dist/aos
 //= require turbolinks
 //= require_tree .
+//
+// window.onload = function(){
+//
+// };
+
+$().ready(function(){
+  AOS.init({
+    duration: 500,
+    offset: 200,
+    duration: 600
+  });
+});

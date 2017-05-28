@@ -29,3 +29,5 @@ en:
     news: 'NEWS'
     contactUs: 'Contact Us'
     language: 'Language'
+  product_deatil:
+    read_more: 'Read More >'

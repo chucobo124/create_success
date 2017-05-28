@@ -33,3 +33,6 @@ en:
     read_more: 'Read More >'
   download_page:
     download_catelog: 'Download Catelog:'
+  footer:
+    contact_address: 'Contact Address'
+    contact_us: 'Contact Us'

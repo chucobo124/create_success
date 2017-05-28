@@ -1,2 +1,23 @@
+<%= stylesheet_link_tag 'footer', media: 'all' %>
 <div id='footer'>
+  <div class='icon_container'>
+    <%= svg('footer_icon')%>
+  </div>
+  <div class='contact_address'>
+    <div class='contact_container'>
+      <h4><%= t('footer.contact_address')%></h4>
+      <span>新北市土城區明德路一段369-15號</span>
+      <span>No.369-15, Sec. 1, Mingde Rd. ,Tucheng Dist., New Taipei City 236, Taiwan (R.O.C.)</span>
+    </div>
+  </div><!-- End Contact Address-->
+  <div class='contact_us'>
+    <div class='contact_container'>
+      <h4><%= t('footer.contact_us')%></h4>
+      <span><label>Tel:</label>+886-82628650</span>
+      <span><label>Fax:</label>+886-82628660</span>
+      <span><label>Mail:</label>
+        <a href="mailto:wow_seven888@hotmail.com" target="_top">wow_seven888@hotmail.com</a>
+      </span>
+    </div>
+  </div><!-- End Contact Us-->
 <div><!-- End Footer-->

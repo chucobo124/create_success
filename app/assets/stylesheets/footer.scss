@@ -1,0 +1,28 @@
+#footer {
+  display: flex;
+  margin-top: 100px;
+  background: white;
+  padding: 7ch 0ch;
+}
+#footer .icon_container{
+  width: 50vw;
+}
+#footer .icon_container svg{
+  width: 23vw;
+  margin: 4ch 10ch;
+}
+#footer .contact_address, #footer .contact_us{
+  width: 25vw;
+  display:flex;
+  flex-direction: column;
+}
+#footer .contact_container{
+  padding: 0px 3ch;
+}
+#footer .contact_container h4{
+  padding-bottom: 1ch;
+}
+#footer .contact_container span{
+  display: block;
+  line-height: 3ch;;
+}

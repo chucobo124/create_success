@@ -10,3 +10,5 @@ ch:
     language: '語言'
   product_deatil:
     read_more: '觀看更多產品細節 >'
+  download_page:
+    download_catelog: '最新型錄下載：'

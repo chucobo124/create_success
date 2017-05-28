@@ -1,0 +1,19 @@
+#file_download{
+  background: white;
+}
+#file_download .file_download_container{
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding: 7ch;
+}
+#file_download .file_download_container h4{
+  margin-bottom: 4ch;
+}
+#file_download .file_download_container span{
+  padding: 2ch 0px;
+  border-top: 1px solid #D3D3D3;
+}
+#file_download .file_download_container span:last-child{
+  border-bottom: 1px solid #D3D3D3;
+}

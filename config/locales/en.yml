@@ -31,3 +31,5 @@ en:
     language: 'Language'
   product_deatil:
     read_more: 'Read More >'
+  download_page:
+    download_catelog: 'Download Catelog:'

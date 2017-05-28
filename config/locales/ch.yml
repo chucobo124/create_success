@@ -12,3 +12,6 @@ ch:
     read_more: '觀看更多產品細節 >'
   download_page:
     download_catelog: '最新型錄下載：'
+  footer:
+    contact_address: '聯絡地址'
+    contact_us: '聯絡方式'

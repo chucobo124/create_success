@@ -47,7 +47,7 @@ ActiveRecord::Schema.define(version: 20170601110314) do
   end
 
   create_table "products", force: :cascade do |t|
-    t.string   "name"
+    t.string   "name",                   null: false
     t.integer  "spec_id"
     t.integer  "standard_accessorie_id"
     t.integer  "optional_accessorie_id"

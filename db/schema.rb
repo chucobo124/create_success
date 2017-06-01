@@ -10,10 +10,56 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170528202113) do
+ActiveRecord::Schema.define(version: 20170601110314) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "pictures", force: :cascade do |t|
+    t.integer  "imageable_id"
+    t.string   "imageable_type"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.index ["imageable_type", "imageable_id"], name: "index_pictures_on_imageable_type_and_imageable_id", using: :btree
+  end
+
+  create_table "product_specs", force: :cascade do |t|
+    t.string   "maximum_diameter_grab_items"
+    t.string   "distance_between_centers"
+    t.string   "swing_over_bed"
+    t.string   "swing_over_cross_slide"
+    t.string   "taper_of_spindle_bore"
+    t.string   "spindle_bore"
+    t.string   "step_of_spindle_speeds"
+    t.string   "range_of_spindle_speeds"
+    t.string   "range_of_inch_threads"
+    t.string   "range_of_metric_theads"
+    t.string   "top_slide_travel"
+    t.string   "cross_slide_travel"
+    t.string   "tailstock_quil_travel"
+    t.string   "taper_of_tailstock_quill"
+    t.string   "motor"
+    t.string   "overall_dimension"
+    t.string   "net_weight"
+    t.string   "other_data"
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+  end
+
+  create_table "products", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "spec_id"
+    t.integer  "standard_accessorie_id"
+    t.integer  "optional_accessorie_id"
+    t.string   "imageable_type"
+    t.integer  "imageable_id"
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+    t.index ["imageable_type", "imageable_id"], name: "index_products_on_imageable_type_and_imageable_id", using: :btree
+    t.index ["optional_accessorie_id"], name: "index_products_on_optional_accessorie_id", using: :btree
+    t.index ["spec_id"], name: "index_products_on_spec_id", using: :btree
+    t.index ["standard_accessorie_id"], name: "index_products_on_standard_accessorie_id", using: :btree
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "username",               default: "", null: false

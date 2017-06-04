@@ -16,9 +16,6 @@
 //= require turbolinks
 //= require_tree .
 //
-// window.onload = function(){
-//
-// };
 
 $().ready(function(){
   AOS.init({

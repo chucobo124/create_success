@@ -1,0 +1,7 @@
+@import '../default_css';
+#container{
+  display:flex;
+}
+#container #main_container{
+  width:88vw;
+}

@@ -1,0 +1,33 @@
+#side_bar{
+  background:#fbfbfb;
+  display:block;
+  height: 100vh;
+  width: 12vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#side_bar ul{
+  list-style:none;
+  height: 100vh;
+}
+#side_bar ul li{
+  height: 50px;
+}
+#side_bar ul li:hover{
+  background: gray;
+}
+#side_bar ul li:hover a{
+  color: white;
+}
+#side_bar ul li a {
+  padding: 15px 0px;
+  text-align:center;
+  display:block;
+  color: #6b6969;
+  font-family: monospace;
+  font-size: 2.5ch;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+}

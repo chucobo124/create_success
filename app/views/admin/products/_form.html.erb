@@ -1,0 +1,66 @@
+<%= stylesheet_link_tag 'admin/product_form', media: 'all' %>
+<div id='form_container'>
+  <%= form_for @product, url: admin_products_path do |form| %>
+    <% if @product.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@product.errors.count, "error") %> prohibited this @product from being saved:</h2>
+        <ul>
+        <% @product.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div><!--End Error Explanation-->
+    <% end %>
+    <div id= 'product_container'>
+      <div class="actions">
+        <%= form.submit %>
+      </div><!--End Actions-->
+      <div class="field">
+        <%= form.label t('products.sku') %>
+        <%= form.text_field :sku%>
+      </div>
+      <div class="field">
+        <%= form.label t('products.name') %>
+        <%= form.text_field :name%>
+      </div>
+      <div class="field">
+        <%= form.label t('products.description') %>
+        <%= form.cktext_area :description%>
+      </div>
+      <div id='product_picture'>
+        <%= form.fields_for :pictures do |picture_form|%>
+          <div class="field">
+            <%= picture_form.label t('products.asset') %><br>
+            <%= picture_form.file_field :asset %>
+          </div>
+        <%end%>
+      </div><!--End Picture Container-->
+    </div><!--End Product Container-->
+    <div id= 'product_spec_container'>
+      <%= form.fields_for :product_spec do |spec_form| %>
+        <% ['maximum_diameter_grab_items',
+            'distance_between_centers',
+            'swing_over_bed',
+            'swing_over_cross_slide',
+            'taper_of_spindle_bore',
+            'spindle_bore',
+            'step_of_spindle_speeds',
+            'range_of_spindle_speeds',
+            'range_of_inch_threads',
+            'range_of_metric_theads',
+            'top_slide_travel',
+            'cross_slide_travel',
+            'tailstock_quil_travel',
+            'taper_of_tailstock_quill',
+            'motor',
+            'overall_dimension',
+            'net_weight'].each do |column|%>
+          <div class="field">
+            <%= form.label t("products.#{column}") %>
+            <%= spec_form.text_field column.to_sym %>
+          </div>
+        <%end%>
+      <%end%>
+    </div><!--End Product Spec Container-->
+  <%end%>
+</div><!--End of Form Container-->

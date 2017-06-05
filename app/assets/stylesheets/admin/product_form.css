@@ -1,0 +1,24 @@
+.field{
+  margin: 0.5ch 0px;
+}
+.field label{
+  margin: 1ch 0px;
+}
+#form_container form{
+  display: flex;
+  flex-direction: row;
+}
+#product_container{
+  width: 60vw;
+  padding: 20px;
+}
+#product_spec_container{
+  width: 21vw;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+#product_spec_container .field{
+  display: flex;
+  flex-direction: column;
+}

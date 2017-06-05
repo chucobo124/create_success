@@ -36,3 +36,28 @@ en:
   footer:
     contact_address: 'Contact Address'
     contact_us: 'Contact Us'
+  activerecord:
+    attributes:
+      user:
+  product:
+    sku: 'SKU'
+    name: 'Product Name'
+    description: 'Description'
+    maximum_diameter_grab_items: 'Maximum Diameter Grab Items'
+    distance_between_centers: 'Distance Between Centers'
+    swing_over_bed: 'Swing Over Bed'
+    swing_over_cross_slide: 'Swing Over Cross Slide'
+    taper_of_spindle_bore: 'Taper Of Spindle Bore'
+    spindle_bore: 'Spindle Bore'
+    step_of_spindle_speeds: 'Step Of Spindle Speeds'
+    range_of_spindle_speeds: 'Range Of Spindle Speeds'
+    range_of_inch_threads: 'Range Of Inch Threads'
+    range_of_metric_theads: 'Range Of Metric Theads'
+    top_slide_travel: 'Top Slide Travel'
+    cross_slide_travel: 'Cross Slide Travel'
+    tailstock_quil_travel: 'Tailstock Quil Travel'
+    taper_of_tailstock_quill: 'Taper Of Tailstock Quill'
+    motor: 'Motor'
+    overall_dimension: 'Overall Dimension'
+    net_weight: 'Net Weight'
+    asset: 'Product Picture'

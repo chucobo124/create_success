@@ -3,11 +3,17 @@
   <head>
     <title>CreateSuccess</title>
     <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'admin/application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'admin/application', media: 'all', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body onscroll='adjustTopMenu();'>
-    <%= yield %>
+  <body>
+    <div id='container'>
+      <%= render 'admin/shared/side_bar'%>
+      <div id='main_container'>
+        <%= yield %>
+      </div><!-- End Main Container-->
+    </div><!-- End Container-->
   </body>
 </html>

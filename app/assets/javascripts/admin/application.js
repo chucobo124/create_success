@@ -12,15 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require aos/dist/aos
 //= require turbolinks
+//= require ckeditor/init
 //= require_tree .
 //
-
-$().ready(function(){
-  AOS.init({
-    duration: 500,
-    offset: 200,
-    duration: 600
-  });
-});

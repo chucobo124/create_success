@@ -15,3 +15,28 @@ ch:
   footer:
     contact_address: '聯絡地址'
     contact_us: '聯絡方式'
+  activerecord:
+    attributes:
+      product:
+  products:
+    sku: '產品編號'
+    name: '產品名稱'
+    description: '詳細敘述'
+    maximum_diameter_grab_items: '最大可夾工件外徑'
+    distance_between_centers: '兩頂尖距離'
+    swing_over_bed: '床身上最大回轉直徑'
+    swing_over_cross_slide: '中拖板上最大回轉直徑'
+    taper_of_spindle_bore: '主軸錐度'
+    spindle_bore: '主軸孔徑'
+    step_of_spindle_speeds: '調速類型'
+    range_of_spindle_speeds: '主軸轉速範圍'
+    range_of_inch_threads: '英制螺紋範圍'
+    range_of_metric_theads: '公制螺紋範圍'
+    top_slide_travel: '複試刀座最大行程'
+    cross_slide_travel: '溜座橫向最大行程'
+    tailstock_quil_travel: '尾座套筒最大行程'
+    taper_of_tailstock_quill: '尾座套筒錐度'
+    motor: '主電機'
+    overall_dimension: '外形尺寸'
+    net_weight: '淨重'
+    asset: '產品圖片'

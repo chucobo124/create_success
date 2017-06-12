@@ -1,5 +1,7 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require 'spec_helper'
+require 'helpers/examples.rb'
+require 'helpers/picture_uploader_example.rb'
 ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../../config/environment', __FILE__)
 # Prevent database truncation if the environment is production
@@ -28,6 +30,8 @@ ActiveRecord::Migration.maintain_test_schema!
 
 RSpec.configure do |config|
   config.include FactoryGirl::Syntax::Methods
+  config.include Rack::Test::Methods
+  config.include Devise::Test::IntegrationHelpers, type: :request
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 

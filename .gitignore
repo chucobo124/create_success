@@ -44,3 +44,4 @@ bower.json
 .byebug_history
 # ignore bower components
 /vendor/assets/components
+public/test_pictures

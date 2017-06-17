@@ -1,0 +1,18 @@
+<div id='product_list'>
+  <div id='product_container'>
+    <% 8.times do |index|%>
+      <div class='images'>
+        <div class='cover'>
+          <div class='product_info'>
+            <span class='title'><%="asset_#{index+1}"%></span>
+            <span class='intor_our_product'><%="Into our product"%></span>
+          </div>
+          <div class='info_icon'>
+            <%= svg('info_icon')%>
+          </div>
+        </div>
+        <%= image_tag("tmp_product_picture/asset_#{index+1}.png")%>
+      </div>
+    <%end%>
+  </div><!-- End Product Container-->
+</div><!-- End Product List-->

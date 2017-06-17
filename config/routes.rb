@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     passwords: 'users/passwords',
     registrations: 'users/registrations'
   }
+  get '/product_intors', to: 'product_intors#index'
   namespace :admin do
     root 'home#index'
     resources 'products'

@@ -1,0 +1,18 @@
+<%= stylesheet_link_tag 'product_intors', media: 'all' %>
+<div id='container'>
+  <div id='navbar_container'>
+    <%= render 'shared/troggle_navigation.html'%>
+  </div><!-- End Navbar Container-->
+  <div id='sub_container'>
+    <%= render 'product_list'%>
+    <div id='read_more'>
+      <div class='icon_container'>
+        <%= svg('tool_icon')%>
+      </div>
+      <span>
+        <%=t('products.read_more')%>
+      </span>
+    </div><!-- End Read More-->
+    <%= render 'shared/footer'%>
+  </div><!-- End Sub Container-->
+</div><!-- End Container-->

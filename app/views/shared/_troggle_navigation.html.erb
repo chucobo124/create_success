@@ -1,5 +1,5 @@
 <%= stylesheet_link_tag 'navigation', media: 'all' %>
-<div id='top_navigation' class='horizontal_navigation'>
+<div id='top_navigation' class='horizontal_navigation troggle_true'>
   <div class= 'shadow_container'>
     <div id='nav_icon_block'>
       <div id= 'nav_icon'>
@@ -11,7 +11,10 @@
         <%=image_tag('main_icon')%>
       </div>
       <ul>
-        <li><a href="#"><span><%= t('navigation.home') %></span></a></li>
+        <li><%= link_to root_path do %>
+              <%= content_tag :span, t('navigation.home') %>
+            <%end%>
+        </li>
         <li><a href="#"><span><%= t('navigation.aboutUs') %></span></a></li>
         <li><%= link_to product_intors_path do %>
               <%= content_tag :span, t('navigation.products') %>

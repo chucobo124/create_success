@@ -1,4 +1,6 @@
 ch:
+  aciton:
+    label: '動作'
   navigation:
     home: '造勝機械'
     aboutUs: '關於我們'
@@ -19,6 +21,9 @@ ch:
     attributes:
       product:
   products:
+    create: '新增產品'
+    update: '更新'
+    delete: '刪除'
     sku: '產品編號'
     name: '產品名稱'
     description: '詳細敘述'

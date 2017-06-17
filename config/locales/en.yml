@@ -20,6 +20,8 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  aciton:
+    label: 'Actions'
   navigation:
     home: 'Create Success'
     aboutUs: 'About Us'
@@ -39,7 +41,8 @@ en:
   activerecord:
     attributes:
       user:
-  product:
+  products:
+    create: 'Create Product'
     sku: 'SKU'
     name: 'Product Name'
     description: 'Description'

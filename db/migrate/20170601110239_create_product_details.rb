@@ -1,6 +1,6 @@
-class CreateProductSpecs < ActiveRecord::Migration[5.0]
+class CreateProductDetails < ActiveRecord::Migration[5.0]
   def change
-    create_table :product_specs do |t|
+    create_table :product_details do |t|
       t.string :maximum_diameter_grab_items
       t.string :distance_between_centers
       t.string :swing_over_bed

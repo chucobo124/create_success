@@ -1,4 +1,13 @@
 ch:
+  email:
+    name: '姓名'
+    gender: '性別'
+    email_label: '電子郵件'
+    company_name: '公司名稱'
+    company_address: '公司地址'
+    phone: '聯絡電話'
+    mobile: '聯絡手機'
+    comment: '留言內容'
   aciton:
     label: '動作'
   navigation:

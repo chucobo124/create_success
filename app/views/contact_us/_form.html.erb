@@ -1,0 +1,20 @@
+<div id='email_form'>
+<%= form_tag("/email", method: "get") do %>
+  <div class= 'layer'>
+    <%= text_field_tag(:name, nil ,placeholder: t('email.name'), class: 'field_small') %>
+    <%= text_field_tag(:gender, nil ,placeholder: t('email.gender'), class: 'field_small') %>
+    <%= text_field_tag(:email, nil ,placeholder: t('email.email_label'), class: 'field_large') %>
+  </div>
+  <div class= 'layer'>
+    <%= text_field_tag(:company_name, nil ,placeholder: t('email.company_name'), class: 'field_large') %>
+    <%= text_field_tag(:company_address, nil ,placeholder: t('email.company_address'), class: 'field_large') %>
+  </div>
+  <div class= 'layer'>
+    <%= text_field_tag(:phone, nil ,placeholder: t('email.phone'), class: 'field_large') %>
+    <%= text_field_tag(:mobile, nil ,placeholder: t('email.mobile'), class: 'field_large') %>
+  </div>
+  <div class= 'layer'>
+    <%= text_area_tag :comment, nil, placeholder: t('email.comment'), rows: '20', cols: '114'%>
+  </div>
+<% end %>
+</div><!--End Email Form-->

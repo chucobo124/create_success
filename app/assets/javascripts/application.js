@@ -14,7 +14,6 @@
 //= require jquery_ujs
 //= require aos/dist/aos
 //= require turbolinks
-//= require_tree .
 //
 
 $().ready(function(){

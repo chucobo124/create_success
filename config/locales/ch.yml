@@ -21,6 +21,7 @@ ch:
     attributes:
       product:
   products:
+    read_more: '觀看更多'
     create: '新增產品'
     update: '更新'
     delete: '刪除'

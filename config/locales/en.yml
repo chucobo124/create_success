@@ -42,6 +42,7 @@ en:
     attributes:
       user:
   products:
+    read_more: 'Read More'
     create: 'Create Product'
     sku: 'SKU'
     name: 'Product Name'

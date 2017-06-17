@@ -10,3 +10,12 @@
   </div><!-- End Sub Container-->
 
 </div><!-- End Container-->
+<%= javascript_include_tag 'top_navgation', media: 'all' %>
+<%= javascript_include_tag 'home_adv_animation', media: 'all' %>
+<script>
+  $(document).ready(function(){
+    $(window).scroll(function(){
+      adjustTopMenu();
+    })
+  });
+</script>

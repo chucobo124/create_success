@@ -1,11 +1,11 @@
 <%= stylesheet_link_tag 'admin/product_form', media: 'all' %>
 <div id='form_container'>
-  <%= form_for @product, url: admin_products_path do |form| %>
-    <% if @product.errors.any? %>
+  <%= form_for @admin_product, url: @redirect_path do |form| %>
+    <% if @admin_product.errors.any? %>
       <div id="error_explanation">
-        <h2><%= pluralize(@product.errors.count, "error") %> prohibited this @product from being saved:</h2>
+        <h2><%= pluralize(@admin_product.errors.count, "error") %> prohibited this @admin_product from being saved:</h2>
         <ul>
-        <% @product.errors.full_messages.each do |message| %>
+        <% @admin_product.errors.full_messages.each do |message| %>
           <li><%= message %></li>
         <% end %>
         </ul>
@@ -30,14 +30,17 @@
       <div id='product_picture'>
         <%= form.fields_for :pictures do |picture_form|%>
           <div class="field">
+            <% if @admin_product.pictures.present?%>
+              <%= image_tag(@admin_product.pictures.first.asset.thumb.url) %>
+            <% end %><br>
             <%= picture_form.label t('products.asset') %><br>
             <%= picture_form.file_field :asset %>
           </div>
         <%end%>
       </div><!--End Picture Container-->
     </div><!--End Product Container-->
-    <div id= 'product_spec_container'>
-      <%= form.fields_for :product_spec do |spec_form| %>
+    <div id= 'product_detail_container'>
+      <%= form.fields_for :product_detail do |spec_form| %>
         <% ['maximum_diameter_grab_items',
             'distance_between_centers',
             'swing_over_bed',
@@ -57,7 +60,8 @@
             'net_weight'].each do |column|%>
           <div class="field">
             <%= form.label t("products.#{column}") %>
-            <%= spec_form.text_field column.to_sym %>
+            <%= product_detail = @admin_product.product_detail.send(column) if @admin_product.product_detail.present?%>
+            <%= spec_form.text_field column.to_sym, value: product_detail %>
           </div>
         <%end%>
       <%end%>

@@ -4,6 +4,6 @@ class Product < ApplicationRecord
                                   foreign_key: 'standard_accessorie_id'
   has_many :optional_accessories, class_name: 'Product',
                                   foreign_key: 'optional_accessorie_id'
-  has_one :product_spec
+  has_one :product_detail
   validates :name, presence: true
 end

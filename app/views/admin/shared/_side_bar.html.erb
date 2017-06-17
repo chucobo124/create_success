@@ -1,8 +1,8 @@
 <%= stylesheet_link_tag 'side_bar', media: 'all' %>
 <div id='side_bar'>
   <ul>
-    <li><a href="#"><span><%= t('navigation.aboutUs') %></span></a></li>
-    <li><a href="#"><span><%= t('navigation.products') %></span></a></li>
+    <li><a href="#"><span><%= t('navigation.aboutUs')%></span></a></li>
+    <li><%=link_to t('navigation.products'), admin_products_path%></li>
     <li><a href="#"><span><%= t('navigation.faq') %></span></a></li>
     <li><a href="#"><span><%= t('navigation.catalogs') %></span></a></li>
     <li><a href="#"><span><%= t('navigation.news') %></span></a></li>

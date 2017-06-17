@@ -29,6 +29,21 @@ RSpec.describe Admin::ProductsController, type: :request do
     it 'creates a new product' do
       expect(subject.sku).to eq(product['sku'])
     end
+    context 'when uploads product_detail' do
+      let(:product_detail) { build(:product_detail).serializable_hash }
+      let(:params_with_product_detail) do
+        result = product
+        result['product_detail'] = product_detail
+        result
+      end
+      let!(:request) do
+        post '/admin/products', product: params_with_product_detail
+      end
+      it 'should saved the product spec' do
+        expect(subject.product_detail.maximum_diameter_grab_items)
+          .to eq product_detail['maximum_diameter_grab_items']
+      end
+    end
     context 'when uploads batch of images' do
       let!(:request) do
         post '/admin/products', product: params_with_image

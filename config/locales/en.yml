@@ -20,6 +20,15 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  email:
+    name: 'Name'
+    gender: 'Gender'
+    email_label: 'Email'
+    company_name: 'Company Name'
+    company_address: 'Company Address'
+    phone: 'Phone'
+    mobile: 'Mobile'
+    comment: 'Comment'
   aciton:
     label: 'Actions'
   navigation:

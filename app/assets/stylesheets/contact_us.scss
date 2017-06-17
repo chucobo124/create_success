@@ -1,0 +1,77 @@
+#sub_container .adv{
+  background-image: asset-url('contact_us_adv');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height:300px;
+}
+#sub_container .adv .cover {
+  background: rgba(0, 0, 0, 0.37);
+  width: 100%;
+  height: 100%;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+#sub_container .adv .cover svg{
+  width: 500px;
+  opacity: 1;
+}
+#sub_container .adv .cover .nav_title{
+  opacity: 1;
+  color: white;
+  width: 100px;
+  display:block;
+  margin: 0px 55px;
+}
+#map_container, #map_container .map{
+  display:block;
+  height: 200px;
+  width: 100%;
+}
+.email_container{
+  background-color: white;
+}
+#icon_container .tools_icon svg{
+  width: 1ch;
+}
+#icon_container .icon_string svg{
+  width: 1ch;
+}
+#icon_container{
+  display: flex;
+  padding: 80px 85px 0px 85px;
+}
+#icon_container .tools_icon {
+  width: 70%;
+  display: flex;
+  align-items: flex-end;
+}
+#icon_container .tools_icon svg{
+  width: 35%;
+}
+#icon_container .tools_icon .cls-1 {
+  fill: #f36421;
+}
+#icon_container .icon_string{
+  width: 90%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+#icon_container .icon_string svg{
+  width: 60%;
+}
+#email_form{
+  padding: 50px;
+}
+#email_form .layer{
+  padding: 10px 0px 0px 0px;
+}
+.field_large{
+  height: 3ch;
+  width: 50ch;
+}
+.field_small{
+  height: 3ch;
+  width: 24.2ch;
+}

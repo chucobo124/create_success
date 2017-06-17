@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     registrations: 'users/registrations'
   }
   get '/product_intors', to: 'product_intors#index'
+  get '/contact_us', to: 'contact_us#index'
   namespace :admin do
     root 'home#index'
     resources 'products'

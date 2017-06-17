@@ -10,18 +10,7 @@
       <div id='main_icon'>
         <%=image_tag('main_icon')%>
       </div>
-      <ul>
-        <li><a href="#"><span><%= t('navigation.home') %></span></a></li>
-        <li><a href="#"><span><%= t('navigation.aboutUs') %></span></a></li>
-        <li><%= link_to product_intors_path do %>
-              <%= content_tag :span, t('navigation.products') %>
-            <%end%>
-        </li>
-        <li><a href="#"><span><%= t('navigation.faq') %></span></a></li>
-        <li><a href="#"><span><%= t('navigation.catalogs') %></span></a></li>
-        <li><a href="#"><span><%= t('navigation.news') %></span></a></li>
-        <li><a href="#"><span><%= t('navigation.contactUs') %></span></a></li>
-      </ul>
+      <%= render 'shared/nav_list'%>
     </div><!--END Main Icon Block-->
   </div><!--END shadow container-->
   <div id='language_block'>

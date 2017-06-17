@@ -1,0 +1,21 @@
+<ul>
+  <li>
+    <%= link_to root_path do %>
+      <%= content_tag :span, t('navigation.home') %>
+    <%end%>
+  </li>
+  <li><a href="#"><span><%= t('navigation.aboutUs') %></span></a></li>
+  <li>
+    <%= link_to product_intors_path do %>
+      <%= content_tag :span, t('navigation.products') %>
+    <%end%>
+  </li>
+  <li><a href="#"><span><%= t('navigation.faq') %></span></a></li>
+  <li><a href="#"><span><%= t('navigation.catalogs') %></span></a></li>
+  <li><a href="#"><span><%= t('navigation.news') %></span></a></li>
+  <li>
+    <%= link_to contact_us_path do %>
+      <%= content_tag :span, t('navigation.contactUs') %>
+    <%end%>
+  </li>
+</ul>

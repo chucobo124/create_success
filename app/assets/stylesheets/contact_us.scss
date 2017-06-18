@@ -16,12 +16,15 @@
   width: 500px;
   opacity: 1;
 }
+#sub_container .adv .cover svg .cls-1{
+  fill: white;
+}
 #sub_container .adv .cover .nav_title{
   opacity: 1;
   color: white;
-  width: 100px;
-  display:block;
-  margin: 0px 55px;
+  display: block;
+  margin: 0px 13px;
+  font-size: 3ch;
 }
 #map_container, #map_container .map{
   display:block;

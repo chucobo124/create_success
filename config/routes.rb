@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     passwords: 'users/passwords',
     registrations: 'users/registrations'
   }
-  get '/product_intors', to: 'product_intors#index'
+  get '/product_catelogs', to: 'product_catelogs#index'
   get '/contact_us', to: 'contact_us#index'
   get '/about_us', to: 'about_us#index'
   namespace :admin do

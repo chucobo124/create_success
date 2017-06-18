@@ -1,0 +1,112 @@
+<%= stylesheet_link_tag 'about_us_page', media: 'all' %>
+<div id='container'>
+  <%= render 'shared/navigation'%>
+  <%= render 'adv'%>
+  <div id='sub_container'>
+    <div class='layer'>
+      <div class='article_container'>
+        <article>
+          <h3>關於我們</h3>
+          <p>位於新北市土城區，秉持著對品質的堅持，以人為本，我們提供更客製、專業、全面的服務，專營各式機母、機具，並提供完整的售後服務教學，滿足您的所有需求，是中小企業與加工廠最好的夥伴。
+              </br></br>美好生活的開端，人們的生活中充滿著無數的器具、用品及必需品，食衣住行都脫離不開他們的存在，我們的機械產出這些生活用品，創造更舒適、便捷、美好的生活，如同陽光的存在一般，照亮人們的生活。</p>
+        </aritcle>
+      </div>
+      <div class='picture_container'>
+        <div class='img_container'>
+          <%=image_tag('about_us/hand')%>
+        </div>
+      </div>
+    </div>
+    <div class='layer'>
+      <div class='nav_container'>
+        <%=image_tag('about_us/nav1')%>
+      </div>
+    </div>
+    <div class='layer other_ordering'>
+      <div class='picture_container'>
+        <div class='img_container'>
+          <%=image_tag('about_us/engine')%>
+        </div>
+      </div>
+      <div class='article_container'>
+        <article>
+          <p>本公司營售精密小型車床、銑床、磨床、各式工具機，自成立以來秉持「精準、效率、專業」的精神，替使用者做第一線的品質把關。成立之前，（老闆）每個業務都從基層加工做起，去了解每個客戶使用機器的環節，更貼近客戶所需的客製化產品、了解客戶一切感受，用心經營，我們的服務不僅只有銷售，造盛持續的提升技術水準，不斷更新資訊，擴充大型設備，為達到客製化需求努力不懈的研發新產品、增進技術、更擁有專業技師在改裝上更精準，以符合市場的需求。用心經營，客戶回饋感受一定馬上消化，以達到客戶至上的理念，從未停止對完美的追求，確認每台機器的工作定位，客戶訂單需求直到售後服務，確保機器使用期間的良好運作，是造盛的首要之務。</p>
+        </aritcle>
+      </div>
+    </div>
+    <div class='layer'>
+      <div class='nav_container'>
+        <%=image_tag('about_us/nav2')%>
+      </div>
+    </div>
+    <div class='layer other_ordering other_ordering_up_reverse'>
+      <div class='article_container'>
+        <article>
+          <h3>客製化服務</h3>
+          <ul>
+            <li>擁有加工技術20年以上的老師傅。</li>
+            <li>擁有綜合機械加工乙級國家證照（車，銑，磨，鉗）專業技師。</li>
+            <li>擁有大型設備（新虎將2番銑床）。</li>
+            <li>（威赫4呎落地車床），設備都經過國家精度檢驗標準ＣＮＳ</li>
+            <li>測試通過。</li>
+            <li>專業教學（車，銑，磨，鉗）。</li>
+            <li>專業改裝（自動化，客製化）。</li>
+            <li>精密儀器測量（日本三豐，日本RSK）。</li>
+            <li>持續使用更高端技術改進機器本質。</li>
+            <li>擁有維修技術20年以上的老師傅。</li>
+          </ul>
+        </aritcle>
+      </div>
+      <div class='picture_container'>
+        <div class='img_container'>
+          <%=image_tag('about_us/engine2')%>
+        </div>
+      </div>
+    </div>
+    <div class='layer special_layer'>
+      <div class='picture_container'>
+        <div class='img_container'>
+          <%=image_tag('about_us/service')%>
+        </div>
+      </div>
+      <div class='article_container'>
+        <article>
+          <h3>服務項目</h3>
+          <p>桌上型車床（小型車床）以及桌上型銑床（小型銑床）、車床共用配件和銑床共用配件、光學尺和線性尺、NC車床、</p>
+        </aritcle>
+      </div>
+    </div>
+    <div class='icon_layer'>
+      <div class='subicon'>
+        <div class='icon'>
+          <%= svg('icons/machine1')%>
+        </div>
+        <span>車床</span>
+      </div>
+      <div class='subicon'>
+        <div class='icon' style='width: 4vw;'>
+          <%= svg('icons/machine2')%>
+        </div>
+        <span>銑床</span>
+      </div>
+      <div class='subicon'>
+        <div class='icon'>
+          <%= svg('icons/rim')%>
+        </div>
+        <span>車床共用配件</span>
+      </div>
+      <div class='subicon'>
+        <div class='icon'>
+          <%= svg('icons/tool')%>
+        </div>
+        <span>銑床共用配件</span>
+      </div>
+    </div>
+    <div class='layer'>
+      <div class='nav_container'>
+        <%=image_tag('about_us/nav3')%>
+      </div>
+    </div>
+    <%= render 'shared/footer'%>
+  </div><!--End Sub Container-->
+</div><!--End Container-->

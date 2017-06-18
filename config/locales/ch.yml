@@ -1,4 +1,5 @@
 ch:
+  scrolldown: '往下滾動'
   email:
     name: '姓名'
     gender: '性別'

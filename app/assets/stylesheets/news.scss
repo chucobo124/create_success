@@ -7,7 +7,7 @@
   width: 100vw;
   height: 100vh;
 }
-#adv_block .cover{
+#adv_block .cover {
   width: 100%;
   height: 100%;
   display: flex;
@@ -15,10 +15,10 @@
   align-items: center;
   justify-content: center;
 }
-#adv_block .cover .icon{
+#adv_block .cover div .icon{
   width: 50vw;
 }
-#adv_block .cover .nav_title{
+#adv_block .cover div .nav_title{
   color: white;
   font-size: 3ch;
 }
@@ -74,6 +74,22 @@
   fill: white;
 }
 
-#adv_block .cover .icon .cls-1{
+#adv_block .cover div .icon .cls-1{
   fill: white;
+}
+#adv_string_logo{
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 100vw;
+  animation-name: fade_image_from_right;
+  animation-duration: 1s;
+  -webkit-animation-name: fade_image_from_right; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+  animation-fill-mode: forwards;
+}
+@keyframes fade_image_from_right{
+  form { left: 100vw; }
+  to {left: 0}
 }

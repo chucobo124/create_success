@@ -13,13 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require aos/dist/aos
-//= require turbolinks
 //
-
 $().ready(function(){
   AOS.init({
     duration: 500,
     offset: 200,
     duration: 600
   });
-});
+})

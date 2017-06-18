@@ -14,7 +14,11 @@
       <%= content_tag :span, t('navigation.products') %>
     <%end%>
   </li>
-  <li><a href="#"><span><%= t('navigation.faq') %></span></a></li>
+  <li>
+    <%= link_to faq_path do %>
+      <%= content_tag :span, t('navigation.faq') %>
+    <%end%>
+  </li>
   <li>
     <%= link_to product_catelogs_path do %>
       <%= content_tag :span, t('navigation.catalogs') %>

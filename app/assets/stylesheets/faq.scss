@@ -1,0 +1,53 @@
+#adv_block{
+  background: image-url('faq_adv');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+#adv_block .cover{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#adv_block .cover .icon{
+  width: 50vw;
+}
+#adv_block .cover .nav_title{
+  color: white;
+  font-size: 3ch;
+}
+.icon .cls-1{
+  fill: white;
+}
+#main_container{
+  padding: 12px;
+  background-color: white;
+}
+#main_container .title{
+  margin-top: 6ch;
+  text-align: center;
+}
+#main_container .icon_container{
+  margin: 10ch;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+#main_container .icon_container .icon_layer .icon{
+  width: 10vw;
+  margin: 0 auto;
+}
+#main_container .icon_container .icon_layer{
+  width: 25%;
+  text-align: center;
+}
+#main_container .icon_container .icon_layer .faq_title{
+  margin: 10px 0px;
+  display: block;
+}

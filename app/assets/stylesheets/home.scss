@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#home_adv{
+#adv_block{
   background-image: image-url('home_adv');
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -15,16 +15,16 @@
   margin-top: 100px;
 }
 // Advertisement block
-#home_adv{
+#adv_block{
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-#home_adv #home_string_logo{
+#adv_block #home_string_logo{
   margin-left: 15vw;
 }
-#home_adv #home_string_logo img{
+#adv_block #home_string_logo img{
   position: relative;
   display: block;
   width: 40vw;
@@ -36,11 +36,11 @@
   -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
   animation-fill-mode: forwards;
 }
-#home_adv #home_adv_product{
+#adv_block #home_adv_product{
   left: 100vw;
   position: relative;
 }
-#home_adv #home_adv_product img{
+#adv_block #home_adv_product img{
   width: 25vw;
 }
 .fade_out{

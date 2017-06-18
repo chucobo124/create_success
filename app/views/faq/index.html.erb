@@ -1,0 +1,88 @@
+<%= stylesheet_link_tag 'faq', media: 'all' %>
+<div id='container'>
+  <%= render 'shared/navigation'%>
+  <%= render 'adv'%>
+  <div id='sub_container'>
+    <div id='main_container'>
+      <div class='title'>
+        <h3>工具機相關知識</h3>
+      </div>
+      <div class='icon_container'>
+        <div class='icon_layer'>
+          <div class='icon'>
+            <%= svg('icons/machine1')%>
+          </div>
+          <div class='faq_title'>
+            <span>專業小型車床</span>
+          </div>
+        </div>
+        <div class='icon_layer'>
+          <div class='icon' style=' width: 7vw; '>
+            <%= svg('icons/machine2')%>
+          </div>
+          <div class='faq_title'>
+            <span>專業小型銑床</span>
+          </div>
+        </div>
+        <div class='icon_layer'>
+          <div class='icon'>
+            <%= svg('icons/machine3')%>
+          </div>
+          <div class='faq_title'>
+            <span>桌上型車床</span>
+          </div>
+        </div>
+        <div class='icon_layer'>
+          <div class='icon'>
+            <%= svg('icons/machine4')%>
+          </div>
+          <div class='faq_title'>
+            <span>桌上型銑床</span>
+          </div>
+        </div>
+        <div class='icon_layer'>
+          <div class='icon'>
+            <%= svg('icons/rim')%>
+          </div>
+          <div class='faq_title'>
+            <span>光學尺/線性尺</span>
+          </div>
+        </div>
+        <div class='icon_layer'>
+          <div class='icon'>
+            <%= svg('icons/tool')%>
+          </div>
+          <div class='faq_title'>
+            <span>鑽頭研磨機</span>
+          </div>
+        </div>
+        <div class='icon_layer'>
+          <div class='icon'>
+            <%= svg('icons/rim')%>
+          </div>
+          <div class='faq_title'>
+            <span>銑刀研磨機</span>
+          </div>
+        </div>
+        <div class='icon_layer'>
+          <div class='icon'>
+            <%= svg('icons/cups')%>
+          </div>
+          <div class='faq_title'>
+            <span>業界唯一推薦</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%= render 'shared/footer'%>
+  </div><!--End Sub Container-->
+</div><!--Container-->
+
+<%= javascript_include_tag 'top_navgation', media: 'all' %>
+<script>
+  $(document).ready(function(){
+    $(window).scroll(function(){
+      adjustTopMenu();
+    })
+  });
+</script>

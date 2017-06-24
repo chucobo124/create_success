@@ -15,9 +15,6 @@
   align-items: center;
   justify-content: center;
 }
-#adv_block .cover .icon{
-  width: 50vw;
-}
 #adv_block .cover .nav_title{
   color: white;
   font-size: 3ch;
@@ -40,20 +37,24 @@
   align-items: baseline;
 }
 #main_container .icon_container .icon_layer .icon{
-  width: 10vw;
+  width: 7vw;
   margin: 0 auto;
 }
 #main_container .icon_container .icon_layer{
   width: 25%;
   text-align: center;
+  margin: 5vh 0vh;
 }
 #main_container .icon_container .icon_layer .faq_title{
-  margin: 10px 0px;
+  margin: 3vh 0px;
   display: block;
+}
+#main_container .icon_container .icon_layer .faq_title span{
+  font-size: 1.3rem;
 }
 #adv_string_logo{
   display: flex;
-  align-items: center;
+  align-items: baseline;
   position: relative;
   right: 100vw;
   animation-name: fade_image_from_right;

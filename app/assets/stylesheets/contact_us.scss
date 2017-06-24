@@ -49,11 +49,13 @@
   display: flex;
   flex-direction: column;
 }
-#icon_container .tools_icon h3{
-  margin: 4vh 1vw;
+#icon_container .tools_icon span{
+  margin: 4vh 0vw;
+  font-size: 3vw;
+  font-weight: 600;
 }
 #icon_container .tools_icon svg{
-  padding-left: 3ch;
+  // padding-left: 3ch;
   width: 35%;
 }
 #icon_container .tools_icon .cls-1 {

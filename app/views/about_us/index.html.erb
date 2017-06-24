@@ -110,3 +110,13 @@
     <%= render 'shared/footer'%>
   </div><!--End Sub Container-->
 </div><!--End Container-->
+
+<script>
+  $(document).ready(function(){
+    $(window).scroll(function(){
+      adjustTopMenu();
+    })
+  });
+</script>
+<%= javascript_include_tag 'top_navgation', media: 'all' %>
+<%= javascript_include_tag 'home_adv_animation', media: 'all' %>

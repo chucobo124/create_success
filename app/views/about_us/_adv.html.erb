@@ -1,12 +1,14 @@
 <%= stylesheet_link_tag 'about_us', media: 'all' %>
-<div id='about_us_adv' onload='activeAboutUsStringAnimation();'>
-  <div id='adv_string_logo' >
-    <div>
-      <%=svg('about_us_adv_icon')%>
-    </div>
-  </div><!--End adv string logo-->
-  <div id='scroll_down_icon_container'>
-    <span><%= t('scrolldown')%></span>
-    <%=svg('scrolldown_icon')%>
-  </div><!--End Scroll Down Icon Container-->
-</div><!--Home ADV-->
+<div id='adv_block'>
+  <div id='about_us_adv' onload='activeAboutUsStringAnimation();'>
+    <div id='adv_string_logo' >
+      <div>
+        <%=svg('about_us_adv_icon')%>
+      </div>
+    </div><!--End adv string logo-->
+    <div id='scroll_down_icon_container'>
+      <span><%= t('scrolldown')%></span>
+      <%=svg('scrolldown_icon')%>
+    </div><!--End Scroll Down Icon Container-->
+  </div><!--Home ADV-->
+</div>

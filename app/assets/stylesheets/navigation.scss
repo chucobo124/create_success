@@ -1,8 +1,8 @@
 .shadow_container{
   display:flex;
-  -webkit-box-shadow: 1.2vw 3.5vh 6px -1.3vw rgba(0, 0, 0, 0.43);
-  -moz-box-shadow: 1.2vw 3.5vh 6px -1.3vw rgba(0, 0, 0, 0.43);
-  box-shadow: 1.2vw 3.5vh 6px -1.3vw rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: 0.8vw 1.2vw 3px -0.9vw rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 0.8vw 1.2vw 3px -0.9vw rgba(0, 0, 0, 0.43);
+  box-shadow: 0.8vw 1.2vw 3px -0.9vw rgba(0, 0, 0, 0.43);
 }
 // Top Navigation style
 #top_navigation{
@@ -63,9 +63,12 @@
 // When troggle the target block
 .troggle_true {
   margin-top: 0vh !important;
-  -webkit-box-shadow: 6px 11px 7px -8px rgba(0, 0, 0, 0.43);
-  -moz-box-shadow: 6px 11px 7px -8px rgba(0, 0, 0, 0.43);
-  box-shadow: 6px 11px 7px -8px rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: 1vw -1.5vw 1vw 1.8vw rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 1vw -1.5vw 1vw 1.8vw rgba(0, 0, 0, 0.43);
+  box-shadow: 1vw -1.5vw 1vw 1.8vw rgba(0, 0, 0, 0.43);
+}
+.troggle_true #nav_icon_block{
+  justify-content: flex-start !important;
 }
 .troggle_true #nav_icon_block{
   width: 3.5vw !important;
@@ -123,7 +126,7 @@
   color: black;
   text-align: center;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 0.8rem;
 }
 
 /* Change the color of links on hover */

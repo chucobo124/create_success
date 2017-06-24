@@ -1,5 +1,5 @@
 #product_detail .products div{
-  background:white;
+  // background:white;
   text-align: center;
 }
 #product_detail .products {
@@ -43,12 +43,6 @@
 #product_detail .products:nth-child(2n+0) .product_pic{
   text-align: right;
 }
-#product_detail .products:nth-child(2n+0) .product_info .product_link div{
-  background-color: #D3D3D3;
-}
-#product_detail .products:nth-child(2n+0) .product_info .product_link div a{
-  color: white;
-}
 #product_detail .products:nth-child(2n+0) .product_info .product_link svg .cls-1{
   fill: #f36421;
 }
@@ -74,9 +68,16 @@
 }
 #product_detail .product_info .product_link div{
   z-index: 5;
+  background-color: none;
+}
+#product_detail .product_info .product_link div:hover{
+  z-index: 5;
   background-color: #f36421;
 }
-#product_detail .products .product_info .product_link svg .cls-1{
+#product_detail .product_info .product_link div:hover a{
+  color: white;
+}
+#product_detail .product_info .product_link div:hover svg .clllsss123s-1{
   fill: white;
 }
 #product_detail .product_info .product_link svg{

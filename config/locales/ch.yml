@@ -9,6 +9,7 @@ ch:
     phone: '聯絡電話'
     mobile: '聯絡手機'
     comment: '留言內容'
+    send: '寄出'
   aciton:
     label: '動作'
   navigation:

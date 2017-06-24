@@ -13,7 +13,7 @@
   align-items: center;
 }
 #sub_container .adv .cover svg{
-  width: 500px;
+  width: 29vw;
   opacity: 1;
 }
 #sub_container .adv .cover svg .cls-1{
@@ -23,12 +23,12 @@
   opacity: 1;
   color: white;
   display: block;
-  margin: 0px 13px;
+  margin: 0px 2vw;
   font-size: 3ch;
 }
 #map_container, #map_container .map{
   display:block;
-  height: 200px;
+  height: 45vh;
   width: 100%;
 }
 .email_container{
@@ -47,9 +47,13 @@
 #icon_container .tools_icon {
   width: 70%;
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+}
+#icon_container .tools_icon h3{
+  margin: 4vh 1vw;
 }
 #icon_container .tools_icon svg{
+  padding-left: 3ch;
   width: 35%;
 }
 #icon_container .tools_icon .cls-1 {
@@ -58,7 +62,7 @@
 #icon_container .icon_string{
   width: 90%;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: flex-end;
 }
 #icon_container .icon_string svg{
@@ -69,6 +73,20 @@
 }
 #email_form .layer{
   padding: 10px 0px 0px 0px;
+}
+#email_form .layer textarea{
+  width: 101ch;
+}
+#email_form .layer input[type=submit] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 70ch;
+  font-size: 1rem;
+  height: 5vh;
+  border: 1px solid #f36421;
+  color: #f36421;
+  background-color: white;
 }
 .field_large{
   height: 3ch;

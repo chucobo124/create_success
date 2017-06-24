@@ -41,8 +41,9 @@
   width: 4vw;
 }
 #about_us_adv #scroll_down_icon_container span{
-  font-size: 12px;
+  font-size: 1vw;
   display: block;
+  width: 4em;
   margin: 5px 0px;
 }
 @keyframes fade_image_from_right{
@@ -51,7 +52,7 @@
 }
 .layer{
   display: flex;
-  height: 419px;
+  height: 80vh;
 }
 .article_container{
   background: white;
@@ -61,7 +62,10 @@
   width: 50%;
 }
 .article_container article{
-  padding: 35px;
+  padding: 9ch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .picture_container img{
   padding: 0px 0px 13px 30px;
@@ -130,10 +134,14 @@ p{
   width: 6vw;
 }
 .icon_layer{
-  padding: 3ch 0;
+  height: 28vh;
+  padding: 5ch 10ch;
   background-color: white;
   display: flex;
   align-items:baseline;
   justify-content: space-around;
   text-align: center;
+}
+.icon_layer span{
+  font-size: 3ch;
 }

@@ -30,6 +30,7 @@ en:
     phone: 'Phone'
     mobile: 'Mobile'
     comment: 'Comment'
+    send: 'Send'
   aciton:
     label: 'Actions'
   navigation:

@@ -1,0 +1,71 @@
+<%= stylesheet_link_tag 'product_page', media: 'all' %>
+<div id='container'>
+  <%= render 'shared/navigation'%>
+  <%= render 'adv'%>
+  <div id='sub_container'>
+    <div id='product_block'>
+      <div class='category_container'>
+        <h1>銑床</h1><!--This is a category block-->
+        <span><h3>
+          milling
+          machine</h3>
+        </span>
+      </div><!--End Category Container-->
+      <div class='products'>
+        <div class='product_container'>
+          <div class='product_photo'>
+            <div class='image_block'>
+              <%= image_tag 'tmp_product_picture/asset_1.png'%>
+            </div>
+          </div>
+          <div class='product_name'>
+            <span>CSM36V</span>
+          </div>
+        </div><!--End Product Container-->
+        <!--***********************Example Start**************************-->
+        <div class='product_container'>
+          <div class='product_photo'>
+            <div class='image_block'>
+              <%= image_tag 'tmp_product_picture/asset_1.png'%>
+            </div>
+          </div>
+          <div class='product_name'>
+            <span>CSM36V</span>
+          </div>
+        </div><!--End Product Container-->
+        <div class='product_container'>
+          <div class='product_photo'>
+            <div class='image_block'>
+              <%= image_tag 'tmp_product_picture/asset_1.png'%>
+            </div>
+          </div>
+          <div class='product_name'>
+            <span>CSM36V</span>
+          </div>
+        </div><!--End Product Container-->
+        <div class='product_container'>
+          <div class='product_photo'>
+            <div class='image_block'>
+              <%= image_tag 'tmp_product_picture/asset_1.png'%>
+            </div>
+          </div>
+          <div class='product_name'>
+            <span>CSM36V</span>
+          </div>
+        </div><!--End Product Container-->
+        <div class='product_container'>
+          <div class='product_photo'>
+            <div class='image_block'>
+              <%= image_tag 'tmp_product_picture/asset_1.png'%>
+            </div>
+          </div>
+          <div class='product_name'>
+            <span>CSM36V</span>
+          </div>
+        </div><!--End Product Container-->
+        <!--***************************End Example********************************-->
+      </div><!--End Products-->
+    </div><!--End Product Container-->
+    <%= render 'shared/footer'%>
+  </div><!--End subContainer-->
+</div><!--End Container-->

@@ -1,4 +1,5 @@
 ch:
+  download: '下載檔案'
   scrolldown: '往下滾動'
   email:
     name: '姓名'

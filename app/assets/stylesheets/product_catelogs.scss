@@ -9,31 +9,24 @@
 }
 #product_list #product_container .images{
   width: 22vw;
-  height: 300px;
+  height: 45vh;
   overflow: hidden;
   border-bottom: 7px solid #F26421;
 }
 #product_list #product_container .images .cover{
   width: 22vw;
-  height: 300px;
+  height: 45vh;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.33);
+  background-color: rgba(0, 0, 0, 0.70);
 }
 #product_list #product_container .images .cover:hover{
   background-color: rgba(242, 100, 33, 0.48);
 }
 #product_list #product_container .images .cover:hover .product_info{
-  display:flex;
+  color: white;
 }
 #product_list #product_container .images .cover:hover svg{
   display:block;
-}
-#read_more{
-  display: flex;
-  padding: 80px 0px 0px 0px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
 }
 #product_list #product_container .images .cover {
   display: flex;
@@ -42,11 +35,19 @@
   justify-content: flex-end;
 }
 #product_list #product_container .images .cover .product_info{
-  display: none;
   flex-direction: column;
-  margin: 0px 0px 14ch 0px;
-  color: white;
-  display:none;
+  margin: 0px 0px 17vh 0px;
+  color: rgba(255, 255, 255, 0.25);
+  display:flex;
+}
+#product_list #product_container .images .cover .product_info span{
+  font-size: 3rem;
+}
+#product_list #product_container .images .cover .product_info .download{
+  margin: 0.3ch 0;
+  font-size: 1rem;
+  font-family: sans-serif;
+  font-weight: 100;
 }
 #product_list #product_container .images .cover svg{
   display: none;
@@ -59,12 +60,29 @@
 svg .cls-2{
   opacity: 1;
 }
+#read_more{
+  margin: 12vh auto;
+  width: 12vw;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+#read_more:hover span{
+  font-size: 1.6rem;
+}
+#read_more:hover .icon_container svg{
+  width: 2.5vw;
+}
 #read_more .icon_container{
   margin: 0px 8px 0px 0px;
 }
-
+#read_more span{
+  font-size: 1.3rem;
+}
 #read_more .icon_container svg{
-  width:23px;
+  width: 2vw;
 }
 
 #read_more .icon_container svg .cls-1{

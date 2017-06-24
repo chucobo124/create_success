@@ -36,6 +36,13 @@
 .products{
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 4vh;
+  border-bottom: 1px solid #D4D4D4;
+  padding-bottom: 4vh;
+}
+.products:last-child{
+  border-bottom: none;
+  padding-bottom: 0;
 }
 .products .product_container{
   display: flex;
@@ -67,6 +74,9 @@
   display: flex;
   margin: 18vh 0 8vh 0vw;
 }
-.category_container span h3{
+.category_container span h4{
   width: 1vw;
+  margin-left: 1vw;
+  font-size: 4ch;
+  font-weight: 600;
 }

@@ -22,7 +22,7 @@
 }
 #sub_container .layer{
   display: flex;
-  height: 20vw;
+  height: 26vw;
   border-bottom: 0.2ch solid #EAEAEA;
 }
 #sub_container .layer .product_pic{
@@ -35,12 +35,16 @@
 #sub_container .layer .article_container{
   width: 60vw;
   background-color: white;
+  display: flex;
+  align-items: center;
 }
 #sub_container .layer .article_container article{
-  padding: 5ch 5ch 0 5ch;
+  padding: 9ch;
   line-height: 4ch;
 }
-
+#sub_container .layer .article_container article p{
+  margin: 3em 0em;
+}
 .product_link div{
   width: 200px;
   height: 35px;
@@ -49,12 +53,12 @@
   display: flex;
   align-items: center;
   justify-content:center;
-  margin: 2ch 0 0 5ch;
 }
 .product_link div a{
   display: flex;
   align-items: baseline;
   justify-content:center;
+  align-items: center;
   text-decoration: none;
   width: 100%;
   height: 100%;
@@ -67,7 +71,9 @@
 .product_link div:hover{
   background-color: #F26421;
 }
-
+.product_link div:hover a{
+  color:white;
+}
 .product_link div:hover svg .clllsss123s-1{
   fill: white;
 }
@@ -75,21 +81,14 @@
 #adv_block .cover div .icon .cls-1{
   fill: white;
 }
+#scroll_down_icon_container svg{
+  width: 4vw;
+}
 #scroll_down_icon_container{
   height: 50%;
   display: flex;
   flex-direction: column;
-  width: 4vw;
-  align-items: flex-end;
   justify-content: flex-end;
-}
-#scroll_down_icon_container span{
-  font-size: 12px;
-  display: block;
-  margin: 5px 0px;
-}
-#scroll_down_icon_container svg{
-  width: 4vw;
 }
 #adv_string_logo{
   height: 50%;

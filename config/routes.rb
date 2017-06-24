@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get '/about_us', to: 'about_us#index'
   get '/faq', to: 'faq#index'
   get '/news', to: 'news#index'
+  get '/product', to: 'product_pages#index'
   namespace :admin do
     root 'home#index'
     resources 'products'

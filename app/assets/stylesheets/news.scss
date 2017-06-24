@@ -4,7 +4,9 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  width: 100vw;
+  // width: 100vw;
+  width: 90vw;
+  margin: 0 auto;
   height: 100vh;
 }
 #adv_block .cover {

@@ -64,9 +64,6 @@ article p{
 .picture_container{
   width: 50%;
 }
-.article_container h3{
-  margin: 3vh 0 1vh 0;
-}
 .article_container article{
   padding: 3vh 4vw 1vh 4vw;
   display: flex;
@@ -75,6 +72,9 @@ article p{
 }
 .picture_container img{
   padding: 0px 0px 13px 30px;
+}
+h3{
+  margin: 3vh 0px;
 }
 p{
   line-height: 4ch;
@@ -94,6 +94,9 @@ p{
 }
 .other_ordering_up_reverse .article_container{
   background: white;
+}
+.other_ordering_up_reverse .article_container h3{
+  margin: 3vh 0 2vh 0;
 }
 .picture_container .img_container{
   height: 90%;

@@ -83,6 +83,17 @@
       </div><!--End Article Block-->
       <!--********************Example End**************-->
     </div><!--End Article Container-->
+    <div id='previous_page'>
+      <a href='/faq'>
+        <div class='icon_container'>
+          <%= svg('tool_icon')%>
+        </div>
+        <span>
+          <%=t('previous_page')%>
+        </span>
+      </a>
+    </div><!-- End Read More-->
+    <%= render 'shared/footer'%>
   </div><!--End Sub Container-->
 </div><!--Container-->
 <%= javascript_include_tag 'top_navgation', media: 'all' %>
@@ -96,7 +107,6 @@
         $('.article_block .article_paragraph p').hide();
         $('.article_block').removeClass( 'toggle' );
         $(this).addClass( 'toggle' );
-        console.log($('this .layer .article_paragraph p' ));
         $(this).find('.article_paragraph p').slideDown('slow');
     });
   });

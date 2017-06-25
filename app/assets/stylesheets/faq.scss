@@ -100,3 +100,22 @@
   line-height: 4ch;
   margin: 5vh 0vw;
 }
+#previous_page a{
+  margin: 12vh auto;
+  width: 18vw;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+}
+#previous_page .icon_container svg{
+  width: 2vw;
+}
+
+#previous_page span{
+  font-size: 1.5rem;
+  margin-left: 0.5vw;
+}

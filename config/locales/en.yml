@@ -20,6 +20,7 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  previous_page: 'Previous'
   download: 'Download'
   scrolldown: 'Scroll Down'
   email:

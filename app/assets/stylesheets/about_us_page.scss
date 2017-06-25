@@ -55,7 +55,7 @@ article p{
 }
 .layer{
   display: flex;
-  min-height: 27rem;
+  min-height: 28rem;
 }
 .article_container{
   background: white;
@@ -110,9 +110,6 @@ p{
   overflow: hidden;
   width: 44vw;
 }
-.special_layer{
-  height: 63vh;
-}
 .special_layer .picture_container .img_container{
   width: 41.5vw;
 }
@@ -131,7 +128,7 @@ p{
   justify-content: flex-end;
 }
 .article_container article ul li{
-  margin: 2vh 0px;
+  margin: 1rem 0px;
 }
 .article_container article ul li:before {
   content: "• ";

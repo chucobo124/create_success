@@ -5,8 +5,8 @@
   background:white;
   display:flex;
   align-items: center;
-  height: 50vh;
   overflow: hidden;
+  height: 20rem;
 }
 #product_detail .products:nth-child(2n+0){
   flex-direction: row-reverse;

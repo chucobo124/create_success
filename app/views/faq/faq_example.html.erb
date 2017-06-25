@@ -1,0 +1,103 @@
+<%= stylesheet_link_tag 'faq', media: 'all' %>
+<div id='container'>
+  <%= render 'shared/navigation'%>
+  <%= render 'adv'%>
+  <div id='sub_container'>
+    <div class='article_container'>
+      <h3>專業小型車床</h3>
+      <div class='article_block'>
+        <div class='layer'>
+          <div class='article_title'>
+            <span>車床的由來？</span>
+          </div>
+          <div class='article_paragraph'>
+            <p>床，又稱鏇床，是一種將加工物固定在一旋轉主軸上加工的工具機。1797年英國人亨利·莫茲利發明了車床，通常用在圓柱型態的工件加工。
+一般車床配備各種專用刀具，可完成內外圓加工、鑽孔、車螺紋、切斷車槽、端面加工、車外圓、鑽中心孔、車孔，鉸孔、車圓錐、車成形面、滾花、
+盤繞彈簧等加工程序。</p>
+          </div>
+          <div class='article_date'>
+            <span>share  2016.11.11</span>
+          </div>
+        </div><!--End Layer Block-->
+      </div><!--End Article Block-->
+      <!--***************Example start*****************-->
+      <div class='article_block'>
+        <div class='layer'>
+          <div class='article_title'>
+            <span>車床的由來？</span>
+          </div>
+          <div class='article_paragraph'>
+            <p>床，又稱鏇床，是一種將加工物固定在一旋轉主軸上加工的工具機。1797年英國人亨利·莫茲利發明了車床，通常用在圓柱型態的工件加工。
+一般車床配備各種專用刀具，可完成內外圓加工、鑽孔、車螺紋、切斷車槽、端面加工、車外圓、鑽中心孔、車孔，鉸孔、車圓錐、車成形面、滾花、
+盤繞彈簧等加工程序。</p>
+          </div>
+          <div class='article_date'>
+            <span>share  2016.11.11</span>
+          </div>
+        </div><!--End Layer Block-->
+      </div><!--End Article Block-->
+      <div class='article_block'>
+        <div class='layer'>
+          <div class='article_title'>
+            <span>車床的由來？</span>
+          </div>
+          <div class='article_paragraph'>
+            <p>床，又稱鏇床，是一種將加工物固定在一旋轉主軸上加工的工具機。1797年英國人亨利·莫茲利發明了車床，通常用在圓柱型態的工件加工。
+一般車床配備各種專用刀具，可完成內外圓加工、鑽孔、車螺紋、切斷車槽、端面加工、車外圓、鑽中心孔、車孔，鉸孔、車圓錐、車成形面、滾花、
+盤繞彈簧等加工程序。</p>
+          </div>
+          <div class='article_date'>
+            <span>share  2016.11.11</span>
+          </div>
+        </div><!--End Layer Block-->
+      </div><!--End Article Block-->
+      <div class='article_block'>
+        <div class='layer'>
+          <div class='article_title'>
+            <span>車床的由來？</span>
+          </div>
+          <div class='article_paragraph'>
+            <p>床，又稱鏇床，是一種將加工物固定在一旋轉主軸上加工的工具機。1797年英國人亨利·莫茲利發明了車床，通常用在圓柱型態的工件加工。
+一般車床配備各種專用刀具，可完成內外圓加工、鑽孔、車螺紋、切斷車槽、端面加工、車外圓、鑽中心孔、車孔，鉸孔、車圓錐、車成形面、滾花、
+盤繞彈簧等加工程序。</p>
+          </div>
+          <div class='article_date'>
+            <span>share  2016.11.11</span>
+          </div>
+        </div><!--End Layer Block-->
+      </div><!--End Article Block-->
+      <div class='article_block'>
+        <div class='layer'>
+          <div class='article_title'>
+            <span>車床的由來？</span>
+          </div>
+          <div class='article_paragraph'>
+            <p>床，又稱鏇床，是一種將加工物固定在一旋轉主軸上加工的工具機。1797年英國人亨利·莫茲利發明了車床，通常用在圓柱型態的工件加工。
+一般車床配備各種專用刀具，可完成內外圓加工、鑽孔、車螺紋、切斷車槽、端面加工、車外圓、鑽中心孔、車孔，鉸孔、車圓錐、車成形面、滾花、
+盤繞彈簧等加工程序。</p>
+          </div>
+          <div class='article_date'>
+            <span>share  2016.11.11</span>
+          </div>
+        </div><!--End Layer Block-->
+      </div><!--End Article Block-->
+      <!--********************Example End**************-->
+    </div><!--End Article Container-->
+  </div><!--End Sub Container-->
+</div><!--Container-->
+<%= javascript_include_tag 'top_navgation', media: 'all' %>
+<script>
+  $(document).ready(function(){
+    $(window).scroll(function(){
+      adjustTopMenu();
+    })
+    $('.article_block').click(
+      function() {
+        $('.article_block .article_paragraph p').hide();
+        $('.article_block').removeClass( 'toggle' );
+        $(this).addClass( 'toggle' );
+        console.log($('this .layer .article_paragraph p' ));
+        $(this).find('.article_paragraph p').slideDown('slow');
+    });
+  });
+</script>

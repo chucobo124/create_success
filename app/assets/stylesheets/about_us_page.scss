@@ -67,7 +67,7 @@ article p{
   width: 50%;
 }
 .article_container article{
-  padding: 0vh 4vw 1vh 4vw;
+  padding: 0 4rem 1rem 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -79,7 +79,7 @@ h3{
   margin: 3vh 0px;
 }
 p{
-  line-height: 4ch;
+  line-height: 2rem;
 }
 .layer .nav_container,.layer .nav_container img{
   width: 100%;
@@ -101,9 +101,6 @@ p{
 .other_ordering_up_reverse .article_container h3{
   margin: 3vh 0 0 0;
 }
-// .other_ordering_up_reverse .article_container article{
-//   padding: 3vh 4vw 1vh 4vw;
-// }
 .picture_container .img_container{
   height: 90%;
   display: block;

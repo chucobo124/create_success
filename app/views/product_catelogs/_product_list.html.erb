@@ -1,15 +1,17 @@
 <div id='product_list'>
   <div id='product_container'>
     <% 8.times do |index|%>
-      <div class='images'>
-        <div class='cover'>
-          <div class='product_info'>
-            <span class='title'><%="asset_#{index+1}"%></span>
-            <span class='download'>download</span>
+      <a href='/product_catelog/example'>
+        <div class='images'>
+          <div class='cover'>
+            <div class='product_info'>
+              <span class='title'><%="asset_#{index+1}"%></span>
+              <span class='download'>download</span>
+            </div>
           </div>
+          <%= image_tag("tmp_product_picture/asset_#{index+1}.png")%>
         </div>
-        <%= image_tag("tmp_product_picture/asset_#{index+1}.png")%>
-      </div>
+      </a>
     <%end%>
   </div><!-- End Product Container-->
 </div><!-- End Product List-->

@@ -90,3 +90,23 @@ svg .cls-2{
 #read_more .icon_container svg .cls-1{
   fill: #F26421;
 }
+#download_info_container {
+  margin: 0 auto;
+  width: 90vw;
+  height: 90vh;
+  background: image-url('about_us/nav2');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#download_info_container .download_info{
+  padding: 7vh 0vw 0vh 5vw;
+}
+#download_info_container .download_info h2{
+  color: #F26421;
+  margin-bottom: 3vh;
+}
+#download_info_container .download_info .contant{
+  font-size: 1.4rem;
+}

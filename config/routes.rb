@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get '/about_us', to: 'about_us#index'
   get '/faq', to: 'faq#index'
   get '/news', to: 'news#index'
+  get '/news/example', to: 'news#news_example'
   get '/product', to: 'product_pages#index'
   get '/faq/faq_example', to: 'faq#faq_example'
   namespace :admin do

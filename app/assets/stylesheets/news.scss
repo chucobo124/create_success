@@ -27,6 +27,28 @@
   display: flex;
   align-items: center;
 }
+#sub_container #article_block{
+  background-color: white;
+  min-height: 75vh;
+}
+#sub_container #article_block article{
+  padding: 5ch 10ch 0ch 10ch;
+}
+#sub_container #article_block article p{
+  line-height: 3ch;
+}
+#sub_container #article_block h4{
+  margin: 1ch 0 3ch 0;
+}
+#sub_container #article_block .article_info{
+  padding: 5ch 0ch;
+  display:flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid #D4D4D4;
+}
+#sub_container #article_block .article_info .article_date{
+  color: #D4D4D4;
+}
 #sub_container .layer .article_container article{
   padding: 9ch;
   line-height: 4ch;
@@ -94,7 +116,36 @@
   -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
   animation-fill-mode: forwards;
 }
+.example{
+  margin: 0 auto;
+  width: 90vw !important;
+  background: image-url('about_us/nav1') !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
 @keyframes fade_image_from_right{
   form { left: 100vw; }
   to {left: 0}
+}
+
+#previous_page a{
+  margin: 12vh auto;
+  width: 18vw;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+}
+#previous_page .icon_container svg{
+  width: 2vw;
+}
+
+#previous_page span{
+  font-size: 1.5rem;
+  margin-left: 0.5vw;
 }

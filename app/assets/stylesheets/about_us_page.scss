@@ -60,12 +60,14 @@ article p{
 .article_container{
   background: white;
   width: 50%;
+  display: flex;
+  justify-content: center;
 }
 .picture_container{
   width: 50%;
 }
 .article_container article{
-  padding: 3vh 4vw 1vh 4vw;
+  padding: 0vh 4vw 1vh 4vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -96,8 +98,11 @@ p{
   background: white;
 }
 .other_ordering_up_reverse .article_container h3{
-  margin: 3vh 0 2vh 0;
+  margin: 3vh 0 0 0;
 }
+// .other_ordering_up_reverse .article_container article{
+//   padding: 3vh 4vw 1vh 4vw;
+// }
 .picture_container .img_container{
   height: 90%;
   display: block;

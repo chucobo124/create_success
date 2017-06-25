@@ -1,0 +1,37 @@
+<%= stylesheet_link_tag 'news', media: 'all' %>
+<div id='container'>
+  <%= render 'shared/navigation'%>
+  <div id='adv_block' class='example'>
+  </div><!--End Adv Block-->
+  <div id='sub_container'>
+    <div id='article_block'>
+      <article>
+        <h4>工具機</h4>
+        <p>
+          位於新北市土城區，秉持著對品質的堅持，以人為本，我們提供更客製、專業、全面的服務，專營各式機母、機具，並提供完整的售後服務教學，滿足您的所有需求，是中小企業與加工廠最好的夥伴。
+        </p>
+        <br/>
+        <br/>
+        <p>
+          床，又稱鏇床，是一種將加工物固定在一旋轉主軸上加工的工具機。1797年英國人亨利·莫茲利發明了車床，通常用在圓柱型態的工件加工。一般車床配備各種專用刀具，可完成內外圓加工、鑽孔、車螺紋、切斷車槽、端面加工、車外圓、鑽中心孔、車孔，鉸孔、車圓錐、車成形面、滾花、盤繞彈簧等加工程序。
+        </p>
+        <div class='article_info'>
+          <div class='article_date'>
+            <span>share  2016.11.11</span>
+          </div>
+        </div><!--End Article Info-->
+      </article>
+    </div><!--End Article Container-->
+    <div id='previous_page'>
+      <a href='/news'>
+        <div class='icon_container'>
+          <%= svg('tool_icon')%>
+        </div>
+        <span>
+          <%=t('previous_page')%>
+        </span>
+      </a>
+    </div><!-- End Read More-->
+    <%= render 'shared/footer'%>
+  </div><!--End Sub Container-->
+</div><!-- End Container-->

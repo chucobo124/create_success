@@ -38,6 +38,7 @@
   margin-bottom: 4vh;
   border-bottom: 1px solid #D4D4D4;
   padding-bottom: 4vh;
+  align-items: center;
 }
 .products:last-child{
   border-bottom: none;
@@ -47,7 +48,7 @@
   display: flex;
   flex-direction: column;
   flex: 0 1 25vw;
-  align-items: flex-start;
+  align-items: center;
 }
 #product_block{
   background: white;
@@ -71,7 +72,7 @@
 }
 .category_container{
   display: flex;
-  margin: 18vh 0 8vh 0vw;
+  margin: 18vh 0vw 8vh 3vw;
 }
 .category_container span h4{
   width: 1vw;

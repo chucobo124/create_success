@@ -23,7 +23,6 @@ $().ready(function(){
 
   if ($('#scroll_down_icon_container').length > 0){
     $('#scroll_down_icon_container').click(function(){
-      console.log('hello');
       $('html, body').animate({
         scrollTop: $( window ).height()
       }, 500);

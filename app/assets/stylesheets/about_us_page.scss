@@ -55,7 +55,7 @@ article p{
 }
 .layer{
   display: flex;
-  height: 67vh;
+  min-height: 27rem;
 }
 .article_container{
   background: white;
@@ -84,6 +84,7 @@ p{
 .layer .nav_container,.layer .nav_container img{
   width: 100%;
   height: 100%;
+  display: block;
 }
 .other_ordering{
   background-color: #F26421;
@@ -159,7 +160,7 @@ p{
   width: 6vw;
 }
 .icon_layer{
-  height: 28vh;
+  height: 10rem;
   padding: 5ch 10ch;
   background-color: white;
   display: flex;

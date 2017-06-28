@@ -1,0 +1,23 @@
+<form class="form-wrapper">
+  <input type="text" id="search" placeholder="Search for..." required>
+  <input type="submit" value="go" id="submit">
+</form>
+<%= link_to t('news.create'), new_admin_news_path%>
+
+<table>
+  <tr>
+    <th><%= t('news.title')%></th>
+    <th><%= t('news.description')%></th>
+    <th><%= t('aciton.label')%></th>
+  </tr>
+  <% @admin_news.each do |product|%>
+    <tr>
+      <th><%= product.title%></th>
+      <th><%= product.description%></th>
+      <th>
+        <%= link_to t('action.update'), admin_product_path(product.id)%>
+        <%= link_to t('action.delete'), admin_product_path(product.id), method: 'delete'%>
+      </th>
+    </tr>
+  <%end%>
+</table>

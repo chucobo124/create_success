@@ -33,11 +33,16 @@ ch:
   activerecord:
     attributes:
       product:
+  action:
+    update: '更新'
+    delete: '刪除'
+  news:
+    create: '新增最新消息'
+    title: '標題'
+    description: '詳述'
   products:
     read_more: '觀看更多'
     create: '新增產品'
-    update: '更新'
-    delete: '刪除'
     sku: '產品編號'
     name: '產品名稱'
     description: '詳細敘述'

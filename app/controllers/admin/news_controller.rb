@@ -1,4 +1,5 @@
 class Admin::NewsController < Admin::ApplicationController
+  include Imageable
   def index
     @admin_news = News.all
   end
@@ -13,7 +14,17 @@ class Admin::NewsController < Admin::ApplicationController
   end
 
   def create
-    news = News.create(news_params)
+    if news= News.create(news_params)
+      if pictures_params(:news).present?
+        pictures_params(:news).each do |image|
+          save_images news.pictures.create, image
+        end
+      end
+      redirect_to admin_news_index_path
+    else
+      flash[:notice] = 'Something went wrong when create'
+      redirect_to admin_news_index_path
+    end
   end
 
   def update

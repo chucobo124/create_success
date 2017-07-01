@@ -10,13 +10,13 @@
     <th><%= t('news.description')%></th>
     <th><%= t('aciton.label')%></th>
   </tr>
-  <% @admin_news.each do |product|%>
+  <% @admin_news.each do |news|%>
     <tr>
-      <th><%= product.title%></th>
-      <th><%= product.description%></th>
+      <th><%= news.title%></th>
+      <th><%= news.description.html_safe%></th>
       <th>
-        <%= link_to t('action.update'), admin_product_path(product.id)%>
-        <%= link_to t('action.delete'), admin_product_path(product.id), method: 'delete'%>
+        <%= link_to t('action.update'), admin_news_path(news.id)%>
+        <%= link_to t('action.delete'), admin_news_path(news.id), method: 'delete'%>
       </th>
     </tr>
   <%end%>

@@ -27,7 +27,7 @@
         <%= form.label t('products.description') %>
         <%= form.cktext_area :description%>
       </div>
-      <div id='product_picture'>
+      <div id='picture_contianer'>
         <%= form.fields_for :pictures do |picture_form|%>
           <div class="field">
             <% if @admin_product.pictures.present?%>

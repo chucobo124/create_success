@@ -45,3 +45,4 @@ bower.json
 # ignore bower components
 /vendor/assets/components
 public/test_pictures
+public/uploads

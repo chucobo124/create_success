@@ -24,10 +24,10 @@
         <%= form.cktext_area :description%>
       </div>
       <div id='picture_container'>
-        <%= form.fields_for :pictures do |picture_form|%>
+        <%= form.fields_for :picture do |picture_form|%>
           <div class="field">
-            <% if @admin_news.pictures.present?%>
-              <%= image_tag(@admin_news.pictures.first.asset.thumb.url) %>
+            <% if @admin_news.picture.present?%>
+              <%= image_tag(@admin_news.picture.asset.thumb.url) %>
             <% end %><br>
             <%= picture_form.label t('products.asset') %><br>
             <%= picture_form.file_field :asset %>

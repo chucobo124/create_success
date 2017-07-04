@@ -15,20 +15,21 @@ class Admin::NewsController < Admin::ApplicationController
 
   def create
     if news= News.create(news_params)
-      if pictures_params(:news).present?
-        pictures_params(:news).each do |image|
-          save_images news.pictures.create, image
-        end
+      if picture_params(:news).present?
+          save_image news, picture_params(:news)
       end
       redirect_to admin_news_index_path
     else
-      flash[:notice] = 'Something went wrong when create'
+      flash[:notice] = 'Something went wrong when update'
       redirect_to admin_news_index_path
     end
   end
 
   def update
-    if @admin_news.update(news_params)
+    if news.update(news_params)
+      if picture_params(:news).present?
+          save_image news, picture_params(:news)
+      end
       redirect_to admin_news_index_path
     else
       flash[:notice] = 'Something went wrong when update'

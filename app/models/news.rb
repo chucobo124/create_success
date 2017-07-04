@@ -1,3 +1,3 @@
 class News < ApplicationRecord
-  has_many :pictures, as: :imageable
+  has_one :picture, as: :imageable
 end

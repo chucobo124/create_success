@@ -1,0 +1,38 @@
+<%= stylesheet_link_tag 'admin/product_form', media: 'all' %>
+<div id='form_container'>
+  <%= form_for @admin_faq_category, url: @redirect_path do |form| %>
+    <% if @admin_faq_category.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@admin_faq_category.errors.count, "error") %> prohibited this @admin_faq_category from being saved:</h2>
+        <ul>
+        <% @admin_faq_category.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div><!--End Error Explanation-->
+    <% end %>
+    <div id= 'form_container'>
+      <div class="actions">
+        <%= form.submit %>
+      </div><!--End Actions-->
+      <div class="field">
+        <%= form.label t('news.title') %>
+        <%= form.text_field :title%>
+      </div>
+      <div class="field">
+        <%= form.label t('news.description') %>
+        <%= form.cktext_area :description%>
+      </div>
+      <div id='picture_container'>
+        <%= form.fields_for :picture do |picture_form|%>
+          <div class="field">
+            <% if @admin_faq_category.picture.present?%>
+              <%= image_tag(@admin_faq_category.picture.asset.thumb.url) %>
+            <% end %><br>
+            <%= picture_form.label t('products.asset') %><br>
+            <%= picture_form.file_field :asset %>
+          </div>
+        <%end%>
+      </div><!--End Picture Container-->
+    </div>
+  <%end%>

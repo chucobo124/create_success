@@ -15,20 +15,20 @@ ActiveRecord::Schema.define(version: 20170706141252) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "faq", force: :cascade do |t|
-    t.string   "title"
-    t.string   "description"
-    t.integer  "faq_category_id"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
-    t.index ["faq_category_id"], name: "index_faq_on_faq_category_id", using: :btree
-  end
-
   create_table "faq_categories", force: :cascade do |t|
     t.string   "title"
     t.string   "description"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+  end
+
+  create_table "faqs", force: :cascade do |t|
+    t.string   "title"
+    t.string   "description"
+    t.integer  "faq_category_id"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.index ["faq_category_id"], name: "index_faqs_on_faq_category_id", using: :btree
   end
 
   create_table "news", force: :cascade do |t|

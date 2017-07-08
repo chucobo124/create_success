@@ -1,0 +1,18 @@
+<%= stylesheet_link_tag 'admin/product_form', media: 'all' %>
+<div id='form_container'>
+  <%= form_for @faq, url: @redirect_path do |form| %>
+    <div id= 'form_container'>
+      <div class="actions">
+        <%= form.submit %>
+        <%= link_to t('previous_page'), admin_faq_category_faq_index_path(params[:faq_category_id])%>
+      </div><!--End Actions-->
+      <div class="field">
+        <%= form.label t('news.title') %>
+        <%= form.text_field :title%>
+      </div>
+      <div class="field">
+        <%= form.label t('news.description') %>
+        <%= form.cktext_area :description%>
+      </div>
+    </div>
+  <%end%>

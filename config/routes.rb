@@ -18,7 +18,9 @@ Rails.application.routes.draw do
     root 'home#index'
     resources 'products'
     resources 'news'
-    resources 'faq_category'
+    resources 'faq_category' do
+      resources 'faq'
+    end
   end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

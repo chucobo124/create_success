@@ -1,0 +1,23 @@
+<form class="form-wrapper">
+  <input type="text" id="search" placeholder="Search for..." required>
+  <input type="submit" value="go" id="submit">
+</form>
+<%= link_to t('faq_category.create'), new_admin_faq_category_faq_path(params[:faq_category_id])%>
+<%= link_to t('previous_page'), admin_faq_category_index_path%>
+<table>
+  <tr>
+    <th><%= t('faq_category.title')%></th>
+    <th><%= t('faq_category.description')%></th>
+    <th><%= t('aciton.label')%></th>
+  </tr>
+  <% @faqs.each do |faq|%>
+    <tr>
+      <th><%= faq.title%></th>
+      <th><%= faq.description.html_safe%></th>
+      <th>
+        <%= link_to t('action.update'), admin_faq_category_faq_path(params[:faq_category_id],faq.id)%>
+        <%= link_to t('action.delete'), admin_faq_category_faq_path(params[:faq_category_id],faq.id), method: 'delete'%>
+      </th>
+    </tr>
+  <%end%>
+</table>

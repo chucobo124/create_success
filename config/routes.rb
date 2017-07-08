@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get '/faq/faq_example', to: 'faq#faq_example'
   namespace :admin do
     root 'home#index'
+    resources 'product_catelogs'
     resources 'products'
     resources 'news'
     resources 'faq_category' do

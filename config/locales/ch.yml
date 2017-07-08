@@ -40,6 +40,11 @@ ch:
     create: '新增最新消息'
     title: '標題'
     description: '詳述'
+  product_catelogs:
+    create: '新增產品型錄'
+    title: '標題'
+    description: '詳述'
+    file_path: '檔案路徑'
   products:
     read_more: '觀看更多'
     create: '新增產品'

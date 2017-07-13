@@ -1,0 +1,53 @@
+<%= stylesheet_link_tag 'home', media: 'all' %>
+<%= stylesheet_link_tag 'home_product_page', media: 'all' %>
+<div id='container'>
+  <%= render 'shared/troggle_navigation'%>
+  <div id='sub_container'>
+    <div class='nav_bar_block'>
+    </div>
+    <div id='product_detail'>
+      <div class='product csm36'>
+        <div class='product_pic'>
+          <div class='picture_container'>
+            <%= image_tag('home_product/csm20lv.png')%>
+            <div class='tag_container article1'>
+              <div class='tag'>
+                <%= svg 'tag_icon'%>
+              </div>
+              <div class='article'>
+                <!-- <article>
+                  <p>
+                    testtesttesttesttesttesttesttesttest
+                  </p>
+                </article> -->
+              </div>
+            </div>
+            <div class='tag_container article2'>
+              <div class='tag'>
+                <%= svg 'tag_icon'%>
+              </div>
+              <div class='article'>
+                <!-- <article>
+                  <p>
+                    testtesttesttesttesttesttesttesttest
+                  </p>
+                </article> -->
+              </div>
+            </div>
+          </div>
+        </div><!--End Product Picture -->
+        <div class='product_info' data-aos="fade-up">
+           <div class='product_name'><span>CSM36V</span></div>
+           <div class='product_link'>
+             <div>
+               <a href='/csm36v'>
+                 <%= svg 'tool_icon'%>
+                 <%= t('product_deatil.read_more') %>
+               </a>
+             </div>
+           </div><!--End Product Link -->
+        </div><!--End Product Info -->
+      </div><!--End Product Block -->
+    </div>
+  </div>
+</div>

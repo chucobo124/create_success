@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   root to: 'home#index'
+  get '/csm36v' , to: 'home#csm36v'
+  get '/csl210v' , to: 'home#csl210v'
   devise_for :users, controllers: {
     sessions: 'users/sessions',
     passwords: 'users/passwords',

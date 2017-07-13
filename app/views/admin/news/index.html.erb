@@ -2,7 +2,7 @@
   <input type="text" id="search" placeholder="Search for..." required>
   <input type="submit" value="go" id="submit">
 </form>
-<%= link_to t('news.create'), new_admin_news_path%>
+<%= link_to t('news.create'), new_admin_news_path , class: 'btn info'%>
 
 <table>
   <tr>
@@ -15,8 +15,8 @@
       <th><%= news.title%></th>
       <th><%= news.description.html_safe%></th>
       <th>
-        <%= link_to t('action.update'), admin_news_path(news.id)%>
-        <%= link_to t('action.delete'), admin_news_path(news.id), method: 'delete'%>
+        <%= link_to t('action.update'), admin_news_path(news.id), class: 'btn success'%>
+        <%= link_to t('action.delete'), admin_news_path(news.id), method: 'delete', class: 'btn danger'%>
       </th>
     </tr>
   <%end%>

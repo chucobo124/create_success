@@ -2,12 +2,14 @@
   <input type="text" id="search" placeholder="Search for..." required>
   <input type="submit" value="go" id="submit">
 </form>
-<%= link_to t('faq_category.create'), new_admin_faq_category_faq_path(params[:faq_category_id])%>
-<%= link_to t('previous_page'), admin_faq_category_index_path%>
+<div class='inline_link'>
+  <%= link_to t('faq.create'), new_admin_faq_category_faq_path(params[:faq_category_id]), class: 'btn info'%>
+  <%= link_to t('previous_page'), admin_faq_category_index_path, class: 'btn warning'%>
+</div>
 <table>
   <tr>
-    <th><%= t('faq_category.title')%></th>
-    <th><%= t('faq_category.description')%></th>
+    <th><%= t('faq.title')%></th>
+    <th><%= t('faq.description')%></th>
     <th><%= t('aciton.label')%></th>
   </tr>
   <% @faqs.each do |faq|%>
@@ -15,8 +17,8 @@
       <th><%= faq.title%></th>
       <th><%= faq.description.html_safe%></th>
       <th>
-        <%= link_to t('action.update'), admin_faq_category_faq_path(params[:faq_category_id],faq.id)%>
-        <%= link_to t('action.delete'), admin_faq_category_faq_path(params[:faq_category_id],faq.id), method: 'delete'%>
+        <%= link_to t('action.update'), admin_faq_category_faq_path(params[:faq_category_id],faq.id), class: 'btn success'%>
+        <%= link_to t('action.delete'), admin_faq_category_faq_path(params[:faq_category_id],faq.id), method: 'delete', class: 'btn danger'%>
       </th>
     </tr>
   <%end%>

@@ -2,7 +2,7 @@
   <input type="text" id="search" placeholder="Search for..." required>
   <input type="submit" value="go" id="submit">
 </form>
-<%= link_to t('product_catelogs.create'), admin_product_catelogs_path%>
+<%= link_to t('product_catelogs.create'), admin_product_catelogs_path, class: 'btn info'%>
 
 <table>
   <tr>
@@ -17,8 +17,8 @@
       <th><%= product_catelog.description.html_safe%></th>
       <th><%= product_catelog.file_path%></th>
       <th>
-        <%= link_to t('action.update'), admin_product_catelog_path(product_catelog.id)%>
-        <%= link_to t('action.delete'), admin_product_catelog_path(product_catelog.id), method: 'delete'%>
+        <%= link_to t('action.update'), admin_product_catelog_path(product_catelog.id), class: 'btn success'%>
+        <%= link_to t('action.delete'), admin_product_catelog_path(product_catelog.id), method: 'delete', class: 'btn danger'%>
       </th>
     </tr>
   <%end%>

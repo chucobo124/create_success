@@ -2,7 +2,7 @@
   <input type="text" id="search" placeholder="Search for..." required>
   <input type="submit" value="go" id="submit">
 </form>
-<%= link_to t('faq_category.create'), new_admin_faq_category_path%>
+<%= link_to t('faq_category.create'), new_admin_faq_category_path, class: 'btn info'%>
 
 <table>
   <tr>
@@ -15,8 +15,8 @@
       <th><%= link_to t(faq_category.title), admin_faq_category_faq_index_path(faq_category.id)%></th>
       <th><%= faq_category.description.html_safe%></th>
       <th>
-        <%= link_to t('action.update'), admin_faq_category_path(faq_category.id)%>
-        <%= link_to t('action.delete'), admin_faq_category_path(faq_category.id), method: 'delete'%>
+        <%= link_to t('action.update'), admin_faq_category_path(faq_category.id), class: 'btn success'%>
+        <%= link_to t('action.delete'), admin_faq_category_path(faq_category.id), method: 'delete', class: 'btn danger'%>
       </th>
     </tr>
   <%end%>

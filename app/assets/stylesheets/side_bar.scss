@@ -1,9 +1,9 @@
 #side_bar{
   background: #231815;
-  display:block;
   height: 100vh;
-  width: 12vw;
+  width: 15vw;
   display: flex;
+  position: fixed;
   flex-direction: column;
   justify-content: center;
 }
@@ -30,4 +30,7 @@
   height: 100%;
   width: 100%;
   text-decoration: none;
+}
+#side_bar_container{
+  width: 15vw;
 }

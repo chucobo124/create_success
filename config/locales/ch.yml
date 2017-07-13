@@ -40,6 +40,14 @@ ch:
     create: '新增最新消息'
     title: '標題'
     description: '詳述'
+  faq:
+    create: '新增相關知識'
+    title: '標題'
+    description: '詳述'
+  faq_category:
+    create: '新增相關知識資料夾'
+    title: '標題'
+    description: '詳述'
   product_catelogs:
     create: '新增產品型錄'
     title: '標題'

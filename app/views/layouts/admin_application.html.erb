@@ -10,7 +10,9 @@
 
   <body>
     <div id='container'>
-      <%= render 'admin/shared/side_bar'%>
+      <div id='side_bar_container'>
+        <%= render 'admin/shared/side_bar'%>
+      </div>
       <div id='main_container'>
         <%= yield %>
       </div><!-- End Main Container-->

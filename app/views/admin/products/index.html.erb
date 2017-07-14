@@ -15,8 +15,8 @@
       <th><%= product.sku%></th>
       <th><%= product.name%></th>
       <th>
-        <%= link_to t('products.update'), admin_product_path(product.id)%>
-        <%= link_to t('products.delete'), admin_product_path(product.id), method: 'delete'%>
+        <%= link_to t('products.update'), admin_product_path(product.id), class: 'btn success'%>
+        <%= link_to t('products.delete'), admin_product_path(product.id), method: 'delete', class: 'btn danger'%>
       </th>
     </tr>
   <%end%>

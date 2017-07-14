@@ -12,7 +12,7 @@
   margin: 4ch 10ch;
 }
 #footer .contact_address, #footer .contact_us{
-  width: 25vw;
+  width: 32vw;
   display:flex;
   flex-direction: column;
 }
@@ -25,4 +25,10 @@
 #footer .contact_container span{
   display: block;
   line-height: 3ch;;
+}
+#footer .contact_container p{
+  font-size: 1.8ch;
+}
+#footer .contact_container .english_size{
+  font-size: 1.5ch;
 }

@@ -5,7 +5,7 @@
   padding: 7ch 0ch;
 }
 #footer .icon_container{
-  width: 50vw;
+  width: 34vw;
 }
 #footer .icon_container svg{
   width: 23vw;
@@ -29,6 +29,8 @@
 #footer .contact_container p{
   font-size: 1.8ch;
 }
-#footer .contact_container .english_size{
-  font-size: 1.5ch;
+#footer .contact_container .en_address{
+  width: 230px;
+  font-size: 1.9ch;
+  word-break: break-all;
 }

@@ -71,13 +71,19 @@
 }
 .category_container{
   display: flex;
-  margin: 18vh 0vw 8vh 3vw;
+  margin: 18vh 7.5vw 8vh 3vw;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 .category_container span h4{
   width: 1vw;
   margin-left: 1vw;
   font-size: 4ch;
   font-weight: 100;
+}
+.category_container .category_name{
+  display: flex;
+  flex-direction: row;
 }
 #products_container{
   padding-bottom: 5em;

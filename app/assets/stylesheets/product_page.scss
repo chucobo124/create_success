@@ -36,7 +36,6 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 4vh;
-  border-bottom: 1px solid #D4D4D4;
   padding-bottom: 4vh;
   align-items: center;
 }
@@ -66,7 +65,7 @@
 .product_name{
   text-align: center;
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 100;
   margin: 3vh 0vh;
   width: 17vw;
 }
@@ -78,5 +77,18 @@
   width: 1vw;
   margin-left: 1vw;
   font-size: 4ch;
-  font-weight: 600;
+  font-weight: 100;
+}
+#products_container{
+  padding-bottom: 5em;
+  background: white;
+}
+hr{
+  display: block;
+  margin: 1em;
+  color: #e0dddd;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border: solid 1px#e0dddd;
 }

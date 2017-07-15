@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170708140925) do
+ActiveRecord::Schema.define(version: 20170714163133) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -45,6 +45,15 @@ ActiveRecord::Schema.define(version: 20170708140925) do
     t.datetime "updated_at",     null: false
     t.string   "asset"
     t.index ["imageable_type", "imageable_id"], name: "index_pictures_on_imageable_type_and_imageable_id", using: :btree
+  end
+
+  create_table "product_categories", force: :cascade do |t|
+    t.string   "title"
+    t.string   "description"
+    t.integer  "product_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["product_id"], name: "index_product_categories_on_product_id", using: :btree
   end
 
   create_table "product_catelogs", force: :cascade do |t|
@@ -92,8 +101,10 @@ ActiveRecord::Schema.define(version: 20170708140925) do
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
     t.integer  "product_detail_id"
+    t.integer  "product_category_id"
     t.index ["imageable_type", "imageable_id"], name: "index_products_on_imageable_type_and_imageable_id", using: :btree
     t.index ["optional_accessorie_id"], name: "index_products_on_optional_accessorie_id", using: :btree
+    t.index ["product_category_id"], name: "index_products_on_product_category_id", using: :btree
     t.index ["product_detail_id"], name: "index_products_on_product_detail_id", using: :btree
     t.index ["spec_id"], name: "index_products_on_spec_id", using: :btree
     t.index ["standard_accessorie_id"], name: "index_products_on_standard_accessorie_id", using: :btree

@@ -2,8 +2,7 @@
   <input type="text" id="search" placeholder="Search for..." required>
   <input type="submit" value="go" id="submit">
 </form>
-<%= link_to t('product_catelogs.create'), admin_product_catelogs_path, class: 'btn info'%>
-
+<%= link_to t('product_catelogs.create'), new_admin_product_catelog_path, class: 'btn info'%>
 <table>
   <tr>
     <th><%= t('product_catelogs.title')%></th>

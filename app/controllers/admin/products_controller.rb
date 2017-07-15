@@ -3,15 +3,15 @@ class Admin::ProductsController < Admin::ApplicationController
   before_action :product, only: [:show, :update, :delete]
 
   def index
-    @admin_products = Product.all
+    @admin_products = Product.where(product_category_id: params[:product_category_id])
   end
 
   def show
-    @redirect_path = admin_product_path(product.id)
+    @redirect_path = admin_product_category_products_path(product.id)
   end
 
   def new
-    @redirect_path = admin_products_path
+    @redirect_path = admin_product_category_products_path(params[:product_category_id])
     @admin_product = Product.new
   end
 
@@ -27,7 +27,7 @@ class Admin::ProductsController < Admin::ApplicationController
     else
       product.product_detail = ProductDetail.new(product_detail_params)
     end
-    redirect_to admin_products_path
+    redirect_to admin_product_category_products_path(params[:product_category_id])
   end
 
   def update
@@ -41,12 +41,12 @@ class Admin::ProductsController < Admin::ApplicationController
     else
       @admin_product.product_detail = ProductDetail.new(product_detail_params)
     end
-    redirect_to admin_products_path
+    redirect_to admin_product_category_products_path(params[:product_category_id])
   end
 
   def destroy
     product.destroy
-    redirect_to admin_products_path
+    redirect_to admin_product_category_products_path(params[:product_category_id])
   end
 
   private
@@ -56,7 +56,7 @@ class Admin::ProductsController < Admin::ApplicationController
   end
 
   def product_params
-    params.require(:product).permit(:name, :sku, :description)
+    params.require(:product).permit(:name, :sku, :description).merge(product_category_id: params[:product_category_id])
   end
 
   def product_detail_params

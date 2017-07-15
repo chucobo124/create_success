@@ -19,7 +19,9 @@ Rails.application.routes.draw do
   namespace :admin do
     root 'home#index'
     resources 'product_catelogs'
-    resources 'products'
+    resources 'product_categories' do
+      resources 'products'
+    end
     resources 'news'
     resources 'faq_category' do
       resources 'faq'

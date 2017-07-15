@@ -2,8 +2,10 @@
   <input type="text" id="search" placeholder="Search for..." required>
   <input type="submit" value="go" id="submit">
 </form>
-<%= link_to t('products.create'), new_admin_product_path, class: 'btn info'%>
-
+<div class='inline_link'>
+  <%= link_to t('products.create'), new_admin_product_category_product_path(params[:product_category_id]), class: 'btn info'%>
+  <%= link_to t('previous_page'), admin_product_categories_path, class: 'btn warning'%>
+</div>
 <table>
   <tr>
     <th><%= t('products.sku')%></th>
@@ -15,8 +17,8 @@
       <th><%= product.sku%></th>
       <th><%= product.name%></th>
       <th>
-        <%= link_to t('products.update'), admin_product_path(product.id), class: 'btn success'%>
-        <%= link_to t('products.delete'), admin_product_path(product.id), method: 'delete', class: 'btn danger'%>
+        <%= link_to t('products.update'), admin_product_category_product_path(params[:product_category_id], product.id), class: 'btn success'%>
+        <%= link_to t('products.delete'), admin_product_category_product_path(params[:product_category_id], product.id), method: 'delete', class: 'btn danger'%>
       </th>
     </tr>
   <%end%>

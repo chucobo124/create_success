@@ -1,11 +1,11 @@
 <%= stylesheet_link_tag 'admin/product_form', media: 'all' %>
 <div id='form_container'>
-  <%= form_for @admin_product_catelog, url: @redirect_path do |form| %>
-    <% if @admin_product_catelog.errors.any? %>
+  <%= form_for @product_category, url: @redirect_path do |form| %>
+    <% if @product_category.errors.any? %>
       <div id="error_explanation">
-        <h2><%= pluralize(@admin_product_catelog.errors.count, "error") %> prohibited this @admin_product_catelog from being saved:</h2>
+        <h2><%= pluralize(@product_category.errors.count, "error") %> prohibited this @product_category from being saved:</h2>
         <ul>
-        <% @admin_product_catelog.errors.full_messages.each do |message| %>
+        <% @product_category.errors.full_messages.each do |message| %>
           <li><%= message %></li>
         <% end %>
         </ul>
@@ -13,7 +13,7 @@
     <% end %>
     <div id= 'form_container'>
       <div class="actions">
-        <%= form.submit class: 'btn info'%>
+        <%= form.submit class: 'btn info' %>
       </div><!--End Actions-->
       <div class="field">
         <%= form.label t('news.title') %>
@@ -22,10 +22,6 @@
       <div class="field">
         <%= form.label t('news.description') %>
         <%= form.cktext_area :description%>
-      </div>
-      <div class="field">
-        <%= form.label t('product_catelogs.file_path') %><br>
-        <%= form.file_field :file_path %>
       </div>
     </div>
   <%end%>

@@ -3,7 +3,7 @@
   <%= form_for @faq, url: @redirect_path do |form| %>
     <div id= 'form_container'>
       <div class="actions">
-        <%= form.submit %>
+        <%= form.submit class: 'btn info'%>
         <%= link_to t('previous_page'), admin_faq_category_faq_index_path(params[:faq_category_id])%>
       </div><!--End Actions-->
       <div class="field">
@@ -16,3 +16,4 @@
       </div>
     </div>
   <%end%>
+</div>

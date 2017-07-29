@@ -56,6 +56,7 @@ a:hover {
   color: white; /* Add a text color */
   padding: 14px 28px; /* Add some padding */
   cursor: pointer; /* Add a pointer cursor on mouse-over */
+  margin: 5px;
 }
 
 .success {background-color: #4CAF50;} /* Green */
@@ -77,6 +78,10 @@ a:hover {
   content: counter(page) " ";
 }
 
+h3 {
+  font-size: 20px;
+  margin-bottom: 19px;
+}
 // .link_to_previous_page:before, .link_to_next_page:before{
 //   counter-increment: none;
 //   content: " ";

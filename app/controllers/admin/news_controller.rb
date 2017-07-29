@@ -1,7 +1,7 @@
 class Admin::NewsController < Admin::ApplicationController
   include Imageable
   def index
-    @admin_news = News.all
+    @admin_news = News.all.order('id DESC')
   end
 
   def show

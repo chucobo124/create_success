@@ -1,7 +1,7 @@
 class Admin::ProductCatelogsController < Admin::ApplicationController
   before_action :product_catelog, only: [:show, :update, :delete]
   def index
-    @admin_product_catelogs = ProductCatelog.all
+    @admin_product_catelogs = ProductCatelog.all.order('id DESC')
   end
 
   def new

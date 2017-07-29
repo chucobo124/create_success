@@ -1,7 +1,7 @@
 class Admin::ProductCategoriesController < Admin::ApplicationController
   before_action :product_category, only: [:show, :update, :delete]
   def index
-    @product_category = ProductCategory.all
+    @product_category = ProductCategory.all.order('id DESC')
   end
 
   def show

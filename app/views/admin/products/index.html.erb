@@ -5,6 +5,7 @@
 <div class='inline_link'>
   <%= link_to t('products.create'), new_admin_product_category_product_path(params[:product_category_id]), class: 'btn info'%>
   <%= link_to t('previous_page'), admin_product_categories_path, class: 'btn warning'%>
+  <%= render('admin/shared/pagenate')%>
 </div>
 <table>
   <tr>

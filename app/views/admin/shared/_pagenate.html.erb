@@ -1,0 +1,15 @@
+<div class='pagenate'>
+  <% if @page_info[:current_page] > 1%>
+    <%=link_to('<', "?page=#{@page_info[:previous_page]}", class: 'link_to_previous_page')%>
+  <%end%>
+  <% @page_info[:page_range].each do |page|%>
+    <% if page == @page_info[:current_page]%>
+      <%=link_to("", "?page=#{page}", class: 'page_number disable_link')%>
+    <%else%>
+      <%=link_to("", "?page=#{page}", class: 'page_number')%>
+    <%end%>
+  <%end%>
+  <% if @page_info[:current_page] < @page_info[:max_page] %>
+    <%=link_to('>', "?page=#{@page_info[:next_page]}", class: 'link_to_next_page')%>
+  <% end %>
+</div>

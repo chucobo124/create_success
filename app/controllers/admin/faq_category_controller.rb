@@ -1,7 +1,7 @@
 class Admin::FaqCategoryController < Admin::ApplicationController
   include Imageable
   def index
-    @admin_faq_category = FaqCategory.all
+    @admin_faq_category = FaqCategory.all.order('id DESC')
   end
 
   def show

@@ -38,7 +38,8 @@ table tr:nth-child(2n+2){
   background: #dadada;
 }
 body{
-      font-family: sans-serif;
+  counter-reset: page;
+  font-family: sans-serif;
 }
 
 a {
@@ -71,3 +72,12 @@ a:hover {
 
 .default {background-color: #e7e7e7; color: black;} /* Gray */
 .default:hover {background: #ddd;}
+.pagenate .page_number:before {
+  counter-increment: page;
+  content: counter(page) " ";
+}
+
+// .link_to_previous_page:before, .link_to_next_page:before{
+//   counter-increment: none;
+//   content: " ";
+// }

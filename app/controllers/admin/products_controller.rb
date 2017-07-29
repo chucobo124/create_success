@@ -1,9 +1,12 @@
 class Admin::ProductsController < Admin::ApplicationController
   include Imageable
+  include Pagenatable
   before_action :product, only: [:show, :update, :delete]
 
   def index
     @admin_products = Product.where(product_category_id: params[:product_category_id])
+                             .order('id DESC').page(params[:page])
+    page_info(@admin_products)
   end
 
   def show

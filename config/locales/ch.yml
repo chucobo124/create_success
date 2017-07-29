@@ -50,6 +50,10 @@ ch:
     create: '新增相關知識資料夾'
     title: '標題'
     description: '詳述'
+  product_category:
+    create: '新增產品介紹類別'
+    title: '標題'
+    description: '詳述'
   product_catelogs:
     create: '新增產品型錄'
     title: '標題'

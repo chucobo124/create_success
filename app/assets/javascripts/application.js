@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require 'jquery.dotdotdot.min'
 //= require aos/dist/aos
 //
 $().ready(function(){

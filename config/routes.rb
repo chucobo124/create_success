@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get '/faq/faq_example', to: 'faq#faq_example'
   get '/faq_category/:category_id', to: 'faq_category#index'
   get '/news', to: 'news#index'
+  get '/news/:id', to: 'news#show'
   get '/news/example', to: 'news#news_example'
   get '/product', to: 'product_pages#index'
   namespace :admin do

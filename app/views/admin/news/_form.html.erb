@@ -29,7 +29,7 @@
             <% if @admin_news.picture.present?%>
               <%= image_tag(@admin_news.picture.asset.thumb.url) %>
             <% end %><br>
-            <%= picture_form.label t('products.asset') %><br>
+            <%= picture_form.label t('news.asset') %><br>
             <%= picture_form.file_field :asset %>
           </div>
         <%end%>

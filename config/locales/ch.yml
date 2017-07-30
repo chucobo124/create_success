@@ -42,6 +42,7 @@ ch:
     create: '新增最新消息'
     title: '標題'
     description: '詳述'
+    asset: '最新消息圖片'
   faq:
     create: '新增相關知識'
     title: '標題'

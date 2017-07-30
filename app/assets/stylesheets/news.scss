@@ -26,6 +26,7 @@
   background-color: white;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 #sub_container #article_block{
   background-color: white;
@@ -33,6 +34,10 @@
 }
 #sub_container #article_block article{
   padding: 5ch 10ch 0ch 10ch;
+}
+#sub_container #article_block article article{
+  padding: 0ch;
+  word-break: break-all;
 }
 #sub_container #article_block article p{
   line-height: 3ch;
@@ -50,8 +55,12 @@
   color: #D4D4D4;
 }
 #sub_container .layer .article_container article{
-  padding: 9ch;
+  display:flex;
+  width: 85%;
+  height: 75%;
   line-height: 4ch;
+  flex-direction: column;
+  justify-content: space-between;
 }
 #sub_container .layer .article_container article p{
   margin: 3vh 0em;
@@ -148,4 +157,20 @@
 #previous_page span{
   font-size: 1.5rem;
   margin-left: 0.5vw;
+}
+.status_container{
+  display: flex;
+  justify-content: space-between;
+}
+.status_container .date{
+  font-size: 14px;
+  color: #D4D4D4;
+}
+.description{
+  word-break: break-all;
+  overflow: hidden;
+}
+.article_title_and_description{
+  height: 100%;
+  overflow: hidden;
 }

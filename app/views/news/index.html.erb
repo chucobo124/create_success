@@ -3,142 +3,36 @@
   <%= render 'shared/navigation'%>
   <%= render 'adv'%>
   <div id='sub_container'>
-    <div class='layer' data-aos="fade-up">
-      <div class='product_pic'>
-        <%= image_tag('tmp_product_picture/asset_1.png')%>
-      </div>
-      <div class='article_container'>
-        <article>
-          <h4>工具機</h4>
-          <p>位於新北市土城區，秉持著對品質的堅持，以人為本，我們提供更客製、專業、全面的服務，專營各式機母、機具，並提供完整的售後服務教學，滿足您的所有需求，是中小企業與加工廠最好的夥伴。<p>
-            <div class='product_link'>
-              <div>
-                <a href='/news/example'>
-                  <%= svg 'tool_icon'%>
-                  <span><%= t('product_deatil.read_more') %></span>
-                </a>
+    <% @news.each do |news|%>
+      <div class='layer' data-aos="fade-up">
+        <div class='product_pic'>
+          <% if news.picture.try(:asset).try(:thumb).try(:url).present?%>
+            <%= image_tag(news.picture.try(:asset).try(:thumb).try(:url))%>
+          <%end%>
+        </div>
+        <div class='article_container'>
+          <article>
+            <div class='article_title_and_description'>
+              <h4><%= news.title%></h4>
+              <article class='description'><%= news.description.html_safe%></article>
+            </div>
+            <div class='status_container'>
+              <div class='product_link'>
+                <div>
+                  <%=link_to 'news/' + news.id.to_s do%>
+                    <%= svg 'tool_icon'%>
+                    <span><%= t('product_deatil.read_more') %></span>
+                  <%end%>
+                </div>
+              </div><!--End Product Link -->
+              <div class= 'date'>
+                <span>share <%=  news.created_at.strftime('%Y-%m-%d')%></span>
               </div>
-            </div><!--End Product Link -->
-        </article>
-      </div><!--End Article Container-->
-    </div><!--End Laryer-->
-
-    <!--***************************************Example**********************************************-->
-    <div class='layer' data-aos="fade-up">
-      <div class='product_pic'>
-        <%= image_tag('tmp_product_picture/asset_1.png')%>
-      </div>
-      <div class='article_container'>
-        <article>
-          <h4>工具機</h4>
-          <p>位於新北市土城區，秉持著對品質的堅持，以人為本，我們提供更客製、專業、全面的服務，專營各式機母、機具，並提供完整的售後服務教學，滿足您的所有需求，是中小企業與加工廠最好的夥伴。<p>
-            <div class='product_link'>
-              <div>
-                <a href='/news/example'>
-                  <%= svg 'tool_icon'%>
-                  <span><%= t('product_deatil.read_more') %></span>
-                </a>
-              </div>
-            </div><!--End Product Link -->
-        </article>
-      </div><!--End Article Container-->
-    </div><!--End Laryer-->
-    <div class='layer' data-aos="fade-up">
-      <div class='product_pic'>
-        <%= image_tag('tmp_product_picture/asset_1.png')%>
-      </div>
-      <div class='article_container'>
-        <article>
-          <h4>工具機</h4>
-          <p>位於新北市土城區，秉持著對品質的堅持，以人為本，我們提供更客製、專業、全面的服務，專營各式機母、機具，並提供完整的售後服務教學，滿足您的所有需求，是中小企業與加工廠最好的夥伴。<p>
-            <div class='product_link'>
-              <div>
-                <a href='/news/example'>
-                  <%= svg 'tool_icon'%>
-                  <span><%= t('product_deatil.read_more') %></span>
-                </a>
-              </div>
-            </div><!--End Product Link -->
-        </article>
-      </div><!--End Article Container-->
-    </div><!--End Laryer-->
-    <div class='layer' data-aos="fade-up">
-      <div class='product_pic'>
-        <%= image_tag('tmp_product_picture/asset_1.png')%>
-      </div>
-      <div class='article_container'>
-        <article>
-          <h4>工具機</h4>
-          <p>位於新北市土城區，秉持著對品質的堅持，以人為本，我們提供更客製、專業、全面的服務，專營各式機母、機具，並提供完整的售後服務教學，滿足您的所有需求，是中小企業與加工廠最好的夥伴。<p>
-            <div class='product_link'>
-              <div>
-                <a href='/news/example'>
-                  <%= svg 'tool_icon'%>
-                  <span><%= t('product_deatil.read_more') %></span>
-                </a>
-              </div>
-            </div><!--End Product Link -->
-        </article>
-      </div><!--End Article Container-->
-    </div><!--End Laryer-->
-    <div class='layer' data-aos="fade-up">
-      <div class='product_pic'>
-        <%= image_tag('tmp_product_picture/asset_1.png')%>
-      </div>
-      <div class='article_container'>
-        <article>
-          <h4>工具機</h4>
-          <p>位於新北市土城區，秉持著對品質的堅持，以人為本，我們提供更客製、專業、全面的服務，專營各式機母、機具，並提供完整的售後服務教學，滿足您的所有需求，是中小企業與加工廠最好的夥伴。<p>
-            <div class='product_link'>
-              <div>
-                <a href='/news/example'>
-                  <%= svg 'tool_icon'%>
-                  <span><%= t('product_deatil.read_more') %></span>
-                </a>
-              </div>
-            </div><!--End Product Link -->
-        </article>
-      </div><!--End Article Container-->
-    </div><!--End Laryer-->
-    <div class='layer' data-aos="fade-up">
-      <div class='product_pic'>
-        <%= image_tag('tmp_product_picture/asset_1.png')%>
-      </div>
-      <div class='article_container'>
-        <article>
-          <h4>工具機</h4>
-          <p>位於新北市土城區，秉持著對品質的堅持，以人為本，我們提供更客製、專業、全面的服務，專營各式機母、機具，並提供完整的售後服務教學，滿足您的所有需求，是中小企業與加工廠最好的夥伴。<p>
-            <div class='product_link'>
-              <div>
-                <a href='/news/example'>
-                  <%= svg 'tool_icon'%>
-                  <span><%= t('product_deatil.read_more') %></span>
-                </a>
-              </div>
-            </div><!--End Product Link -->
-        </article>
-      </div><!--End Article Container-->
-    </div><!--End Laryer-->
-    <div class='layer' data-aos="fade-up">
-      <div class='product_pic'>
-        <%= image_tag('tmp_product_picture/asset_1.png')%>
-      </div>
-      <div class='article_container'>
-        <article>
-          <h4>工具機</h4>
-          <p>位於新北市土城區，秉持著對品質的堅持，以人為本，我們提供更客製、專業、全面的服務，專營各式機母、機具，並提供完整的售後服務教學，滿足您的所有需求，是中小企業與加工廠最好的夥伴。<p>
-            <div class='product_link'>
-              <div>
-                <a href='/news/example'>
-                  <%= svg 'tool_icon'%>
-                  <span><%= t('product_deatil.read_more') %></span>
-                </a>
-              </div>
-            </div><!--End Product Link -->
-        </article>
-      </div><!--End Article Container-->
-    </div><!--End Laryer-->
-    <!--*********************************End Example***************************-->
+            </div>
+          </article>
+        </div><!--End Article Container-->
+      </div><!--End Laryer-->
+    <%end%>
     <%= render 'shared/footer'%>
   </div><!--End Sub Container-->
 </div><!--Container-->
@@ -149,6 +43,7 @@
       adjustTopMenu();
     })
   });
+  $('.description').dotdotdot();
 </script>
 <%= javascript_include_tag 'top_navgation', media: 'all' %>
 <%= javascript_include_tag 'home_adv_animation', media: 'all' %>

@@ -1,0 +1,32 @@
+<%= stylesheet_link_tag 'news', media: 'all' %>
+<div id='container'>
+  <%= render 'shared/navigation'%>
+  <div id='adv_block' class='example'>
+  </div><!--End Adv Block-->
+  <div id='sub_container'>
+    <div id='article_block'>
+      <article>
+        <h4><%=@news.title%></h4>
+        <article>
+          <%= @news.description.html_safe %>
+        </article>
+        <div class='article_info'>
+          <div class='article_date'>
+            <span>share  <%= @news.created_at.strftime('%Y-%m-%d') %></span>
+          </div>
+        </div><!--End Article Info-->
+      </article>
+    </div><!--End Article Container-->
+    <div id='previous_page'>
+      <a href='/news'>
+        <div class='icon_container'>
+          <%= svg('tool_icon')%>
+        </div>
+        <span>
+          <%=t('previous_page')%>
+        </span>
+      </a>
+    </div><!-- End Read More-->
+    <%= render 'shared/footer'%>
+  </div><!--End Sub Container-->
+</div><!-- End Container-->

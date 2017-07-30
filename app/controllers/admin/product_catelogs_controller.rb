@@ -1,4 +1,5 @@
 class Admin::ProductCatelogsController < Admin::ApplicationController
+  include Imageable
   before_action :product_catelog, only: [:show, :update, :delete]
   def index
     @admin_product_catelogs = ProductCatelog.all.order('id DESC')
@@ -14,12 +15,19 @@ class Admin::ProductCatelogsController < Admin::ApplicationController
   end
 
   def create
-    ProductCatelog.create(product_catelog_params)
+    product_catelog = ProductCatelog.create(product_catelog_params)
+    if params[:product_catelog][:pictures].present?
+      product_catelog.pictures << Picture.new(asset: params[:product_catelog][:pictures] )
+    end
     redirect_to admin_product_catelogs_path
   end
 
   def update
     @admin_product_catelog.update(product_catelog_params)
+    if params[:product_catelog][:pictures].present?
+      @admin_product_catelog.pictures << Picture.new(asset: params[:product_catelog][:pictures] )
+    end
+    @admin_product_catelog.save
     redirect_to admin_product_catelogs_path
   end
 

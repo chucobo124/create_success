@@ -6,13 +6,15 @@
     <th><%= t('product_catelogs.title')%></th>
     <th><%= t('product_catelogs.description')%></th>
     <th><%= t('product_catelogs.file_path')%></th>
+    <th><%= t('product_catelogs.pictures_path')%></th>
     <th><%= t('aciton.label')%></th>
   </tr>
   <% @admin_product_catelogs.each do |product_catelog|%>
     <tr>
       <th><%= product_catelog.title%></th>
-      <th><%= product_catelog.description.html_safe%></th>
+      <th><%= product_catelog.description.try(:html_safe)%></th>
       <th><%= product_catelog.file_path%></th>
+      <th><%= product_catelog.pictures.first.try(:asset).try(:thumb).try(:url)%></th>
       <th>
         <%= link_to t('action.update'), admin_product_catelog_path(product_catelog.id), class: 'btn success'%>
         <%= link_to t('action.delete'), admin_product_catelog_path(product_catelog.id), method: 'delete', class: 'btn danger'%>

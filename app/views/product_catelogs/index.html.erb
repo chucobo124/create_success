@@ -16,3 +16,31 @@
     <%= render 'shared/footer'%>
   </div><!-- End Sub Container-->
 </div><!-- End Container-->
+<data class='page' hidden page='1'></data>
+<script>
+  var page = 1;
+  $('#read_more').click(function(){
+    $.get( "/product_catelogs/display_more/" + (page + 1), function( datas ) {
+      var html = '';
+      if (parseInt(datas[datas.length-1][0].next) === page){ return; }
+      page +=1;
+      datas.pop();
+      datas.forEach ( function(element){
+        html += `
+          <a href=`+element.file_path.url+` download=`+element.title+`.pdf>
+          <div class='images'>
+            <div class='cover'>
+              <div class='product_info'>
+                <span class='title'>`+element.title+`</span>
+                <span class='download'>download</span>
+              </div>
+            </div>
+            <img src=`+element.picture_url+`>
+          </div>`
+        }
+      )
+      $(html).appendTo($('#product_container').slideDown('slow'));
+      // $('#product_container').append( html ).slideDown('fast');
+    });
+  })
+</script>

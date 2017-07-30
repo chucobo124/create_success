@@ -59,6 +59,7 @@ ch:
     title: '標題'
     description: '詳述'
     file_path: '檔案路徑'
+    pictures_path: '圖片路徑'
   products:
     read_more: '觀看更多'
     create: '新增產品'

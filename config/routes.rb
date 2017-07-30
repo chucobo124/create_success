@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   }
   get '/product_catelogs', to: 'product_catelogs#index'
   get '/product_catelog/example', to: 'product_catelogs#category_example'
+  get '/product_catelogs/display_more/:page_index', to: 'product_catelogs#display_more'
   get '/contact_us', to: 'contact_us#index'
   get '/about_us', to: 'about_us#index'
   get '/faq', to: 'faq#index'

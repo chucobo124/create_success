@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170730081100) do
+ActiveRecord::Schema.define(version: 20170730093100) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -62,6 +62,8 @@ ActiveRecord::Schema.define(version: 20170730081100) do
     t.string   "file_path"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.integer  "pictures_id"
+    t.index ["pictures_id"], name: "index_product_catelogs_on_pictures_id", using: :btree
   end
 
   create_table "product_details", force: :cascade do |t|

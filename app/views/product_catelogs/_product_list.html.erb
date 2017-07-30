@@ -1,17 +1,19 @@
 <div id='product_list'>
   <div id='product_container'>
-    <% 8.times do |index|%>
-      <a href='/product_catelog/example'>
+    <% @product_catelogs.each do |product_catelog|%>
+      <%= link_to(product_catelog.file_path.url, download: product_catelog.title) do %>
         <div class='images'>
           <div class='cover'>
             <div class='product_info'>
-              <span class='title'><%="asset_#{index+1}"%></span>
+              <span class='title'><%=product_catelog.title%></span>
               <span class='download'>download</span>
             </div>
           </div>
-          <%= image_tag("tmp_product_picture/asset_#{index+1}.png")%>
+          <% if product_catelog.pictures[0].try(:asset).try(:thumb).try(:url).present?%>
+            <%= image_tag product_catelog.pictures[0].try(:asset).try(:thumb).try(:url) , height: '100%', width: '100%'%>
+          <%end%>
         </div>
-      </a>
+      <%end%>
     <%end%>
   </div><!-- End Product Container-->
 </div><!-- End Product List-->

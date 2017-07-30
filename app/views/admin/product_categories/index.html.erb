@@ -10,7 +10,7 @@
   <% @product_category.each do |product_category|%>
     <tr>
       <th><%= link_to t(product_category.title), admin_product_category_products_path(product_category.id)%></th>
-      <th><%= product_category.description.html_safe%></th>
+      <th><%= product_category.description.try(:html_safe)%></th>
       <th>
         <%= link_to t('action.update'), admin_product_category_path(product_category.id), class: 'btn success'%>
         <%= link_to t('action.delete'), admin_product_category_path(product_category.id), method: 'delete', class: 'btn danger'%>

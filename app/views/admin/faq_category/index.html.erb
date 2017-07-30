@@ -11,7 +11,7 @@
   <% @admin_faq_category.each do |faq_category|%>
     <tr>
       <th><%= link_to t(faq_category.title), admin_faq_category_faq_index_path(faq_category.id)%></th>
-      <th><%= faq_category.description.html_safe%></th>
+      <th><%= faq_category.description.try(:html_safe)%></th>
       <th>
         <%= link_to t('action.update'), admin_faq_category_path(faq_category.id), class: 'btn success'%>
         <%= link_to t('action.delete'), admin_faq_category_path(faq_category.id), method: 'delete', class: 'btn danger'%>

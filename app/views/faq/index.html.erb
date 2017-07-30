@@ -8,71 +8,85 @@
         <h3>工具機相關知識</h3>
       </div>
       <div class='icon_container'>
-          <div class='icon_layer'>
-            <a href= '/faq/faq_example'>
-              <div class='icon'>
-                <%= svg('icons/machine1')%>
-              </div>
-              <div class='faq_title'>
-                <span>專業小型車床</span>
-              </div>
-            </a>
-          </div>
         <div class='icon_layer'>
-          <div class='icon' style=' width: 5vw; '>
-            <%= svg('icons/machine2')%>
-          </div>
-          <div class='faq_title'>
-            <span>專業小型銑床</span>
-          </div>
+          <%= link_to('/faq_category/'+@position1.to_s) do%>
+            <div class='icon'>
+              <%= svg('icons/machine1')%>
+            </div>
+            <div class='faq_title'>
+              <span>專業小型車床</span>
+            </div>
+          <%end%>
         </div>
         <div class='icon_layer'>
-          <div class='icon' style=' width: 9vw; '>
-            <%= svg('icons/machine3')%>
-          </div>
-          <div class='faq_title'>
-            <span>桌上型車床</span>
-          </div>
+          <%= link_to('/faq_category/'+@position2.to_s) do%>
+            <div class='icon' style=' width: 5vw; '>
+              <%= svg('icons/machine2')%>
+            </div>
+            <div class='faq_title'>
+              <span>專業小型銑床</span>
+            </div>
+          <%end%>
         </div>
         <div class='icon_layer'>
-          <div class='icon'>
-            <%= svg('icons/machine4')%>
-          </div>
-          <div class='faq_title'>
-            <span>桌上型銑床</span>
-          </div>
+          <%= link_to('/faq_category/'+@position3.to_s) do%>
+            <div class='icon' style=' width: 9vw; '>
+              <%= svg('icons/machine3')%>
+            </div>
+            <div class='faq_title'>
+              <span>桌上型車床</span>
+            </div>
+          <%end%>
         </div>
         <div class='icon_layer'>
-          <div class='icon'>
-            <%= svg('icons/rim')%>
-          </div>
-          <div class='faq_title'>
-            <span>光學尺/線性尺</span>
-          </div>
+          <%= link_to('/faq_category/'+@position4.to_s) do%>
+            <div class='icon'>
+              <%= svg('icons/machine4')%>
+            </div>
+            <div class='faq_title'>
+              <span>桌上型銑床</span>
+            </div>
+          <%end%>
         </div>
         <div class='icon_layer'>
-          <div class='icon'>
-            <%= svg('icons/tool')%>
-          </div>
-          <div class='faq_title'>
-            <span>鑽頭研磨機</span>
-          </div>
+          <%= link_to('/faq_category/'+@position5.to_s) do%>
+            <div class='icon'>
+              <%= svg('icons/rim')%>
+            </div>
+            <div class='faq_title'>
+              <span>光學尺/線性尺</span>
+            </div>
+          <%end%>
         </div>
         <div class='icon_layer'>
-          <div class='icon'>
-            <%= svg('icons/rim')%>
-          </div>
-          <div class='faq_title'>
-            <span>銑刀研磨機</span>
-          </div>
+          <%= link_to('/faq_category/'+@position6.to_s) do%>
+            <div class='icon'>
+              <%= svg('icons/tool')%>
+            </div>
+            <div class='faq_title'>
+              <span>鑽頭研磨機</span>
+            </div>
+          <%end%>
         </div>
         <div class='icon_layer'>
-          <div class='icon' style='width: 6vw;'>
-            <%= svg('icons/cups')%>
-          </div>
-          <div class='faq_title'>
-            <span>業界唯一推薦</span>
-          </div>
+          <%= link_to('/faq_category/'+@position7.to_s) do%>
+            <div class='icon'>
+              <%= svg('icons/rim')%>
+            </div>
+            <div class='faq_title'>
+              <span>銑刀研磨機</span>
+            </div>
+          <%end%>
+        </div>
+        <div class='icon_layer'>
+          <%= link_to('/faq_category/'+@position8.to_s) do%>
+            <div class='icon' style='width: 6vw;'>
+              <%= svg('icons/cups')%>
+            </div>
+            <div class='faq_title'>
+              <span>業界唯一推薦</span>
+            </div>
+          <%end%>
         </div>
       </div>
     </div>

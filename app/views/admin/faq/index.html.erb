@@ -13,7 +13,7 @@
   <% @faqs.each do |faq|%>
     <tr>
       <th><%= faq.title%></th>
-      <th><%= faq.description.html_safe%></th>
+      <th><%= faq.description.try(:html_safe)%></th>
       <th>
         <%= link_to t('action.update'), admin_faq_category_faq_path(params[:faq_category_id],faq.id), class: 'btn success'%>
         <%= link_to t('action.delete'), admin_faq_category_faq_path(params[:faq_category_id],faq.id), method: 'delete', class: 'btn danger'%>

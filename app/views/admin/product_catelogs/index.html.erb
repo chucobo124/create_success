@@ -11,7 +11,7 @@
   <% @admin_product_catelogs.each do |product_catelog|%>
     <tr>
       <th><%= product_catelog.title%></th>
-      <th><%= product_catelog.description.html_safe%></th>
+      <th><%= product_catelog.description.try(:html_safe)%></th>
       <th><%= product_catelog.file_path%></th>
       <th>
         <%= link_to t('action.update'), admin_product_catelog_path(product_catelog.id), class: 'btn success'%>

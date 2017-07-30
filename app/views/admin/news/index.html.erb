@@ -11,7 +11,7 @@
   <% @admin_news.each do |news|%>
     <tr>
       <th><%= news.title%></th>
-      <th><%= news.description.html_safe%></th>
+      <th><%= news.description.try(:html_safe)%></th>
       <th>
         <%= link_to t('action.update'), admin_news_path(news.id), class: 'btn success'%>
         <%= link_to t('action.delete'), admin_news_path(news.id), method: 'delete', class: 'btn danger'%>
